@@ -22,7 +22,7 @@
     <item>
       <title>Container</title>
       <link>http://www.oracloud.kr/categories/container/</link>
-      <pubDate>Fri, 07 Apr 2017 19:36:38 +0900</pubDate>
+      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/categories/container/</guid>
       <description></description>
@@ -38,11 +38,29 @@
     </item>
     
     <item>
+      <title>Iaas</title>
+      <link>http://www.oracloud.kr/categories/iaas/</link>
+      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/categories/iaas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Oracle</title>
       <link>http://www.oracloud.kr/categories/oracle/</link>
       <pubDate>Wed, 05 Apr 2017 11:23:40 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/categories/oracle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oracle Cloud</title>
+      <link>http://www.oracloud.kr/categories/oracle-cloud/</link>
+      <pubDate>Sun, 05 Mar 2017 22:20:25 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/categories/oracle-cloud/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,7 @@
     <description>Recent content in Docker on 한국 오라클 클라우드 팀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Apr 2017 19:36:38 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 05 Apr 2017 19:36:38 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Oracle Container CS 생성 절차</title>
       <link>http://www.oracloud.kr/post/occs-new-inst/</link>
-      <pubDate>Fri, 07 Apr 2017 19:36:38 +0900</pubDate>
+      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/occs-new-inst/</guid>
       <description>Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에 StackEngine을 인수하였습니다. (관련 공지). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈 급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 Kubenetes와 Storm과 비교되는 StackEngine이라는 Docker 클러스터 운영 및 관리 소프트웨어를 개발해 왔습니다.
