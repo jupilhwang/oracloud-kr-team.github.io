@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 한국 오라클 클라우드 팀</title>
-    <link>http://www.oracloud.kr/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on 한국 오라클 클라우드 팀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://www.oracloud.kr/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cloud</title>
-      <link>http://www.oracloud.kr/categories/cloud/</link>
+      <link>/categories/cloud/</link>
       <pubDate>Wed, 05 Apr 2017 11:23:40 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/categories/cloud/</guid>
+      <guid>/categories/cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Container</title>
-      <link>http://www.oracloud.kr/categories/container/</link>
+      <link>/categories/container/</link>
       <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/categories/container/</guid>
+      <guid>/categories/container/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>http://www.oracloud.kr/categories/docker/</link>
+      <link>/categories/docker/</link>
       <pubDate>Wed, 05 Apr 2017 11:23:40 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/categories/docker/</guid>
+      <guid>/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Iaas</title>
-      <link>http://www.oracloud.kr/categories/iaas/</link>
+      <link>/categories/iaas/</link>
       <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/categories/iaas/</guid>
+      <guid>/categories/iaas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oracle</title>
-      <link>http://www.oracloud.kr/categories/oracle/</link>
+      <link>/categories/oracle/</link>
       <pubDate>Wed, 05 Apr 2017 11:23:40 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/categories/oracle/</guid>
+      <guid>/categories/oracle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oracle Cloud</title>
-      <link>http://www.oracloud.kr/categories/oracle-cloud/</link>
+      <link>/categories/oracle-cloud/</link>
       <pubDate>Sun, 05 Mar 2017 22:20:25 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/categories/oracle-cloud/</guid>
+      <guid>/categories/oracle-cloud/</guid>
       <description></description>
     </item>
     
