@@ -52,10 +52,6 @@
   </url>
   
   <url>
-    <loc>/post/test/</loc>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
