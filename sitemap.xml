@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/taewankim/</loc>
+    <lastmod>2017-04-11T17:05:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/occs-new-inst/</loc>
     <lastmod>2017-04-05T19:36:38+09:00</lastmod>
   </url>
@@ -57,19 +62,31 @@
   </url>
   
   <url>
-    <loc>/categories/cloud/</loc>
-    <lastmod>2017-04-05T11:23:40+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/cloud/</loc>
     <lastmod>2017-04-05T19:36:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/categories/cloud/</loc>
+    <lastmod>2017-04-05T11:23:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/container/</loc>
+    <lastmod>2017-04-05T19:36:38+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/demo/</loc>
+    <lastmod>2017-04-11T17:05:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/docker/</loc>
     <lastmod>2017-04-05T19:36:38+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -81,8 +98,8 @@
   </url>
   
   <url>
-    <loc>/tags/docker/</loc>
-    <lastmod>2017-04-05T19:36:38+09:00</lastmod>
+    <loc>/tags/iaas/</loc>
+    <lastmod>2017-03-10T22:42:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,8 +110,8 @@
   </url>
   
   <url>
-    <loc>/tags/iaas/</loc>
-    <lastmod>2017-03-10T22:42:46+09:00</lastmod>
+    <loc>/tags/oracle/</loc>
+    <lastmod>2017-04-05T19:36:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -105,8 +122,8 @@
   </url>
   
   <url>
-    <loc>/tags/oracle/</loc>
-    <lastmod>2017-04-05T19:36:38+09:00</lastmod>
+    <loc>/tags/oracle-cloud/</loc>
+    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -117,14 +134,8 @@
   </url>
   
   <url>
-    <loc>/tags/oracle-cloud/</loc>
-    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
-    <lastmod>2017-04-05T19:36:38+09:00</lastmod>
+    <lastmod>2017-04-11T17:05:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -160,7 +171,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-04-05T19:36:38+09:00</lastmod>
+    <lastmod>2017-04-11T17:05:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
