@@ -3,17 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Docker</title>
+<title>Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo</title>
 <meta name="description" content="오라클 클라우드 기술 블로그">
 <meta name="generator" content="Hugo 0.21-DEV" />
-<meta property="og:title" content="Docker" />
-<meta property="og:description" content="오라클 클라우드 기술 블로그" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/categories/docker/" />
+<meta property="og:title" content="Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo" />
+<meta property="og:description" content="Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 제공하는 데이터베이스 PaaS입니다. Oracle DBCS 인스턴스를 생성하고 접속하는 과정을 설명한 데모입니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/dbcs_demo/" />
 
 
 
-<meta property="og:updated_time" content="2017-04-05T11:23:40&#43;09:00"/>
+<meta property="article:published_time" content="2017-04-12T13:20:12&#43;09:00"/>
+<meta property="article:modified_time" content="2017-04-12T13:20:12&#43;09:00"/>
+
 
 
 
@@ -25,7 +27,7 @@
 
 
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-<link rel="alternate" type="application/rss+xml" title="한국오라클 DBU, 클라우드 세일즈 컨설팅팀 Feed" href="/categories/docker/index.xml">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/css/minsu.css" type="text/css" media="all" />
@@ -61,41 +63,100 @@
 		<div class="wrapper clearfix">
 
 
-	<div class="main-content loop content" role="main">
-		<header class="page-header">
-			<h1 class="page-header__title">Docker</h1>
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2017-04-12 13:20:12 &#43;0900 &#43;0900">April 12, 2017</time>
+			</p>
 		</header>
-		<article class="loop__item post clearfix">
-			<figure class="loop__thumbnail">
-				<a href="/post/occs/">
-					<img src="http://oracloud-kr-teamrepo.github.io/2017/03/occs/occs.jpg" alt="Oracle Container Cloud Service 소개와 Docker 개요" />
-				</a>
+		<div class="post__content clearfix">
+			<figure class="post__thumbnail">
+				<img src="https://oracloud-kr-teamrepo.github.io/2017/03/dbcs_demo/dashboard.png" alt="Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo">
 			</figure>
-			<div class="loop__content clearfix">
-				<header class="loop__header">
-					<h3 class="loop__title post__title ">
-						<a href="/post/occs/" rel="bookmark">Oracle Container Cloud Service 소개와 Docker 개요</a>
-					</h3>
-					<div class="loop__meta meta">
-						<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-						<time class="loop__meta-date" datetime="2017-04-05 11:23:40 &#43;0900 &#43;0900">April 05, 2017</time>
-					</div>
-				</header>
-				<div class="loop__excerpt">
-							  오라클은 2015년에 Stack Engine이라는 Docker 전문 업체를 인수하였고, 이 업체의 솔루션을 클라우드 서비스 형태로 제공하고 있습니다. 이 서비스가 Oracle Container Cloud Service 입니다.
-OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소개하는 슬라이드를 공유합니다.
- 작성일: 2017-02-07   
-				</div>
-				<div class="loop__excerpt">
-						<a class="label" href="/tags/oracle/" rel="tag">oracle</a></li>
-						<a class="label" href="/tags/cloud/" rel="tag">cloud</a></li>
-						<a class="label" href="/tags/docker/" rel="tag">docker</a></li>
-				</div>
-			</div>
-		</article>
+			<p>Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 제공하는 데이터베이스 PaaS입니다.
+Oracle DBCS 인스턴스를 생성하고 접속하는 과정을 설명한 데모입니다.</p>
 
+<p>데모 동영상 제작 시가는 2017.01.03입니다. 당시 Oracld DBCS 인스턴스 생성 소요시간은 25분 정도였고, 현재는 2017년 04월 기준으로 생성 시간은 15분으로 단축되었습니다.</p>
+
+<p>동영상의 데모를 실습하기 위해서는 오라클 클라우드 계정이 필요합니다. 오라클 클라우드 계정이 없으시다면 다음 문서를 확인하시기 바랍니다.</p>
+
+<ul>
+<li><a href="http://www.oracloud.kr/post/accont/">Oracle Cloud Trial 계정 생성하기</a></li>
+</ul>
+
+<p>데모 동영상은 다음과 같은 내용으로 구성되어 있습니다.
+- Oracle Database CS 인스턴스 생성
+- Security Rule 수정, 1521번 포트 오픈
+- SQLDeveloper
+  - 접속 정보 등록
+  - 오라클 계정 생성
+  - 테이블 생성
+  - 쿼리 수행</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/mMLMtBiZ4-Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+ </div>
+
+
+		</div>
 		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/oracle/" rel="tag">oracle</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/dbcs/" rel="tag">dbcs</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/cloud/" rel="tag">cloud</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="김태완 avatar" src="/img/author/taewan.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">작성자: 김태완</span>
 	</div>
+	<div class="authorbox__description">
+		한국오라클 클라우드 서비스 팀 소속입니다. 클라우드, 가상화, 네트워크, 빅데이터에 관심을 갖고 있습니다. 
+	</div>
+	<div class="authorbox__description">
+		E-mail: oracloud.kr@gmail.com
+	</div>
+</div>
+
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/post/occs-new-inst/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Oracle Container CS 생성 절차</p></a>
+	</div>
+</nav>
+
+	
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://oracloud-kr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
 
 <aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 	

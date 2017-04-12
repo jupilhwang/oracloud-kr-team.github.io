@@ -6,7 +6,7 @@
     <description>Recent content in Tags on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Apr 2017 19:36:38 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 12 Apr 2017 13:20:12 +0900</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Cloud</title>
       <link>/tags/cloud/</link>
-      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
+      <pubDate>Wed, 12 Apr 2017 13:20:12 +0900</pubDate>
       
       <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dbcs</title>
+      <link>/tags/dbcs/</link>
+      <pubDate>Wed, 12 Apr 2017 13:20:12 +0900</pubDate>
+      
+      <guid>/tags/dbcs/</guid>
       <description></description>
     </item>
     
@@ -41,7 +50,7 @@
     <item>
       <title>Oracle</title>
       <link>/tags/oracle/</link>
-      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
+      <pubDate>Wed, 12 Apr 2017 13:20:12 +0900</pubDate>
       
       <guid>/tags/oracle/</guid>
       <description></description>
