@@ -67,19 +67,13 @@
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/tags/cloud/</loc>
-    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://www.oracloud.kr/categories/cloud/</loc>
     <lastmod>2017-04-05T11:23:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/tags/container/</loc>
+    <loc>http://www.oracloud.kr/tags/cloud/</loc>
     <lastmod>2017-04-12T19:34:26+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -91,14 +85,14 @@
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/tags/dbcs/</loc>
-    <lastmod>2017-04-12T13:20:12+09:00</lastmod>
+    <loc>http://www.oracloud.kr/tags/container/</loc>
+    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/tags/docker/</loc>
-    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <loc>http://www.oracloud.kr/tags/dbcs/</loc>
+    <lastmod>2017-04-12T13:20:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -109,8 +103,8 @@
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/tags/iaas/</loc>
-    <lastmod>2017-03-10T22:42:46+09:00</lastmod>
+    <loc>http://www.oracloud.kr/tags/docker/</loc>
+    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -121,8 +115,8 @@
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/tags/oracle/</loc>
-    <lastmod>2017-04-12T13:20:12+09:00</lastmod>
+    <loc>http://www.oracloud.kr/tags/iaas/</loc>
+    <lastmod>2017-03-10T22:42:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -133,14 +127,20 @@
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/tags/oracle-cloud/</loc>
-    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
+    <loc>http://www.oracloud.kr/tags/oracle/</loc>
+    <lastmod>2017-04-12T13:20:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.oracloud.kr/categories/oracle-cloud/</loc>
     <lastmod>2017-03-05T22:20:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/oracle-cloud/</loc>
+    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
