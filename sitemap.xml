@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.oracloud.kr/post/ravello_by_kim_suk/</loc>
+    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/occs_new_docker_container/</loc>
     <lastmod>2017-04-12T19:34:26+09:00</lastmod>
   </url>
@@ -146,7 +151,19 @@
   
   <url>
     <loc>http://www.oracloud.kr/post/</loc>
-    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/ravello/</loc>
+    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/categories/ravello/</loc>
+    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -164,7 +181,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/virtualization/</loc>
-    <lastmod>2017-03-10T22:42:46+09:00</lastmod>
+    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -182,7 +199,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
