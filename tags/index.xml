@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</title>
-    <link>http://www.oracloud.kr/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Apr 2017 19:34:26 +0900</lastBuildDate>
     
-	<atom:link href="http://www.oracloud.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cloud</title>
-      <link>http://www.oracloud.kr/tags/cloud/</link>
+      <link>/tags/cloud/</link>
       <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/cloud/</guid>
+      <guid>/tags/cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Container</title>
-      <link>http://www.oracloud.kr/tags/container/</link>
+      <link>/tags/container/</link>
       <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/container/</guid>
+      <guid>/tags/container/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dbcs</title>
-      <link>http://www.oracloud.kr/tags/dbcs/</link>
+      <link>/tags/dbcs/</link>
       <pubDate>Wed, 12 Apr 2017 13:20:12 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/dbcs/</guid>
+      <guid>/tags/dbcs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>http://www.oracloud.kr/tags/docker/</link>
+      <link>/tags/docker/</link>
       <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/docker/</guid>
+      <guid>/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Iaas</title>
-      <link>http://www.oracloud.kr/tags/iaas/</link>
+      <link>/tags/iaas/</link>
       <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/iaas/</guid>
+      <guid>/tags/iaas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oracle</title>
-      <link>http://www.oracloud.kr/tags/oracle/</link>
+      <link>/tags/oracle/</link>
       <pubDate>Wed, 12 Apr 2017 13:20:12 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/oracle/</guid>
+      <guid>/tags/oracle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oracle Cloud</title>
-      <link>http://www.oracloud.kr/tags/oracle-cloud/</link>
+      <link>/tags/oracle-cloud/</link>
       <pubDate>Thu, 02 Mar 2017 21:59:47 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/oracle-cloud/</guid>
+      <guid>/tags/oracle-cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ravello</title>
-      <link>http://www.oracloud.kr/tags/ravello/</link>
-      <pubDate>Thu, 13 Apr 2017 11:23:39 +0900</pubDate>
+      <link>/tags/ravello/</link>
+      <pubDate>Thu, 13 Apr 2017 12:35:37 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/ravello/</guid>
+      <guid>/tags/ravello/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>http://www.oracloud.kr/tags/tutorial/</link>
+      <link>/tags/tutorial/</link>
       <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/tutorial/</guid>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Virtualization</title>
-      <link>http://www.oracloud.kr/tags/virtualization/</link>
+      <link>/tags/virtualization/</link>
       <pubDate>Thu, 13 Apr 2017 11:23:39 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/virtualization/</guid>
+      <guid>/tags/virtualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vm</title>
-      <link>http://www.oracloud.kr/tags/vm/</link>
+      <link>/tags/vm/</link>
       <pubDate>Sun, 05 Mar 2017 22:20:25 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/vm/</guid>
+      <guid>/tags/vm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Window</title>
-      <link>http://www.oracloud.kr/tags/window/</link>
+      <link>/tags/window/</link>
       <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/tags/window/</guid>
+      <guid>/tags/window/</guid>
       <description></description>
     </item>
     
