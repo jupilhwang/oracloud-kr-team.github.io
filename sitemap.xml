@@ -52,6 +52,11 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/post/docker_in_oc/</loc>
+    <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/win-vm/</loc>
     <lastmod>2017-03-10T22:42:46+09:00</lastmod>
   </url>
@@ -69,6 +74,12 @@
   <url>
     <loc>http://www.oracloud.kr/post/oracloud/</loc>
     <lastmod>2017-03-01T10:43:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/acc/</loc>
+    <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -131,6 +142,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/occs/</loc>
+    <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/oracle/</loc>
     <lastmod>2017-04-12T13:20:12+09:00</lastmod>
     <priority>0</priority>
@@ -174,7 +191,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/</loc>
-    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <lastmod>2017-03-20T19:01:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
