@@ -6,32 +6,32 @@
     <description>Recent content in Ravello on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Apr 2017 12:35:37 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Mar 2017 11:23:39 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/tags/ravello/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>TalkIT 세미나 동영상: 가상환경 클라우드 전환 - Ravello</title>
-      <link>http://www.oracloud.kr/post/ravello_talkit/</link>
-      <pubDate>Thu, 13 Apr 2017 12:35:37 +0900</pubDate>
-      
-      <guid>http://www.oracloud.kr/post/ravello_talkit/</guid>
-      <description>2017년 2월 24일에 라벨로를 주제로 진행한 TalkIT 웹비나 동영상입니다.
- 주제: 가상화 환경을 손쉽게 클라우드로 전환하기 진행: 고우성PD 패널:  강우진 전무(한국오라클) 김석 대표이사(노브레이크) 이명재 부장(㈜제이씨원)  일시: 2017-02-24 오후 2시 ~ 오후 3시 30분  Ravell의 개요, 동작 방식 및 현장 적용 사례를 확인 하실 수 있습니다.
-1부. 라벨로, 무엇에 쓰는 물건인고! (18:18)   2부. 라벨로, 전문가가 뜯어보기! (24:20)   3부. 라벨로, 고객이 직접 얘기하기! (15:09)   4부.</description>
-    </item>
-    
-    <item>
       <title>Ravello를 이용한 모의 해킹 환경 구성하기</title>
       <link>http://www.oracloud.kr/post/ravello_by_kim_suk/</link>
-      <pubDate>Thu, 13 Apr 2017 11:23:39 +0900</pubDate>
+      <pubDate>Sat, 25 Mar 2017 11:23:39 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/ravello_by_kim_suk/</guid>
       <description>(주)노브레이크 대표이사이며 오라클 ACE 디렉터로 활동하시는 김석님께서 정리해 주신 라벨로 활용 문서입니다.
 라벨로를 이용한 모의해킹 실습 환경 구성을 주제로 4부에 걸쳐 시리즈된 문서입니다.
 라벨로의 활용 방법과 사용법에 대한여 매우 잘 정리된 문서입니다.
  김재벌의 IT 이야기: 라벨로 시스템을 이용한 클라우드 구축(1) - 가입하기: 2017.01.15 김재벌의 IT 이야기: 라벨로 클라우드를 이용한 실습환경 구축(2) - 기본 환경과 이미지: 2017.01.18 김재벌의 IT 이야기: 라벨로 클라우드를 이용한 모의해킹 실습 환경 구축(3) - 커스텀 이미지 업로드: 2017.</description>
+    </item>
+    
+    <item>
+      <title>TalkIT 세미나 동영상: 가상환경 클라우드 전환 - Ravello</title>
+      <link>http://www.oracloud.kr/post/ravello_talkit/</link>
+      <pubDate>Mon, 13 Mar 2017 12:35:37 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/ravello_talkit/</guid>
+      <description>2017년 2월 24일에 라벨로를 주제로 진행한 TalkIT 웹비나 동영상입니다.
+ 주제: 가상화 환경을 손쉽게 클라우드로 전환하기 진행: 고우성PD 패널:  강우진 전무(한국오라클) 김석 대표이사(노브레이크) 이명재 부장(㈜제이씨원)  일시: 2017-02-24 오후 2시 ~ 오후 3시 30분  Ravell의 개요, 동작 방식 및 현장 적용 사례를 확인 하실 수 있습니다.
+1부. 라벨로, 무엇에 쓰는 물건인고! (18:18)   2부. 라벨로, 전문가가 뜯어보기! (24:20)   3부. 라벨로, 고객이 직접 얘기하기! (15:09)   4부.</description>
     </item>
     
   </channel>

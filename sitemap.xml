@@ -2,13 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.oracloud.kr/post/ravello_talkit/</loc>
-    <lastmod>2017-04-13T12:35:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.oracloud.kr/post/ravello_by_kim_suk/</loc>
-    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
+    <loc>http://www.oracloud.kr/post/talkit_docs/</loc>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
   </url>
   
   <url>
@@ -52,8 +47,18 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/post/ravello_by_kim_suk/</loc>
+    <lastmod>2017-03-25T11:23:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/docker_in_oc/</loc>
     <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/post/ravello_talkit/</loc>
+    <lastmod>2017-03-13T12:35:37+09:00</lastmod>
   </url>
   
   <url>
@@ -113,7 +118,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/dbcs/</loc>
-    <lastmod>2017-04-12T13:20:12+09:00</lastmod>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -173,19 +178,19 @@
   
   <url>
     <loc>http://www.oracloud.kr/post/</loc>
-    <lastmod>2017-04-13T12:35:37+09:00</lastmod>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.oracloud.kr/tags/ravello/</loc>
-    <lastmod>2017-04-13T12:35:37+09:00</lastmod>
+    <lastmod>2017-03-25T11:23:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.oracloud.kr/categories/ravello/</loc>
-    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
+    <lastmod>2017-03-25T11:23:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -197,7 +202,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/talkit/</loc>
-    <lastmod>2017-04-13T12:35:37+09:00</lastmod>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -209,7 +214,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/virtualization/</loc>
-    <lastmod>2017-04-13T11:23:39+09:00</lastmod>
+    <lastmod>2017-03-25T11:23:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -221,7 +226,13 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/webinar/</loc>
-    <lastmod>2017-04-13T12:35:37+09:00</lastmod>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/categories/webinar/</loc>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -233,7 +244,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-04-13T12:35:37+09:00</lastmod>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
