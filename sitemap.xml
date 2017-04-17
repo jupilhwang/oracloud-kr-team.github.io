@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.oracloud.kr/terminology/iaas/</loc>
+    <lastmod>2017-04-17T15:36:33+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/talkit_docs/</loc>
     <lastmod>2017-04-16T20:44:25+09:00</lastmod>
   </url>
@@ -27,7 +32,7 @@
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/opc-news/</loc>
+    <loc>http://www.oracloud.kr/opc-terminology/</loc>
     <lastmod>2017-04-05T10:31:34+09:00</lastmod>
   </url>
   
@@ -207,6 +212,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/terminology/</loc>
+    <lastmod>2017-04-17T15:36:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/tutorial/</loc>
     <lastmod>2017-04-12T19:34:26+09:00</lastmod>
     <priority>0</priority>
@@ -244,7 +255,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
+    <lastmod>2017-04-17T15:36:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,22 @@
     <description>Recent content on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Apr 2017 20:44:25 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 17 Apr 2017 15:36:33 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Oracle Compute Cloud Service의 용어 정리</title>
+      <link>http://www.oracloud.kr/terminology/iaas/</link>
+      <pubDate>Mon, 17 Apr 2017 15:36:33 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/terminology/iaas/</guid>
+      <description>Oracle Compute Cloud Service의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.
+Image list  정의: Image List는 Compute CS의 머신 이미지 목록이다. Image List의 각 머신 이미지는 고유 항목 번호로 식별된다.
+ Instance  정의: Instance는 Compute CS에 머신 이미지와 Shape를 지정하여 생성한 가상머신이다. Instance에 지정한 Shape은 CPU와 메모리 자원에 대한 정의이며, Shape에 정의된 자원이 Instance에 할당된다.
+ Instance Shapshot  정의: Instance Snapshot은 인스턴스의 비 지속성 부트 디스크의 상태 정보를 챕처한 후, 이 정보를 이용하여 만든 머신 이미지이다.</description>
+    </item>
     
     <item>
       <title>TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기</title>
@@ -69,12 +81,12 @@ OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소
     </item>
     
     <item>
-      <title></title>
-      <link>http://www.oracloud.kr/opc-news/</link>
+      <title>OPC 용어 정리</title>
+      <link>http://www.oracloud.kr/opc-terminology/</link>
       <pubDate>Wed, 05 Apr 2017 10:31:34 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/opc-news/</guid>
-      <description></description>
+      <guid>http://www.oracloud.kr/opc-terminology/</guid>
+      <description> Infrastruec Cloud Service  Oracle Compute Cloud Service  </description>
     </item>
     
     <item>
