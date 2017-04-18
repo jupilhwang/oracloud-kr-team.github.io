@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oracle Compute Cloud Service의 용어 정리</title>
+<title>Oracle Compute CS 용어사전</title>
 <meta name="description" content="오라클 클라우드 기술 블로그">
 <meta name="generator" content="Hugo 0.21-DEV" />
-<meta property="og:title" content="Oracle Compute Cloud Service의 용어 정리" />
-<meta property="og:description" content="Oracle Compute Cloud Service의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.
+<meta property="og:title" content="Oracle Compute CS 용어사전" />
+<meta property="og:description" content="Oracle Compute CS의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.
 Image list  정의: Image List는 Compute CS의 머신 이미지 목록이다. Image List의 각 머신 이미지는 고유 항목 번호로 식별된다.
  Instance  정의: Instance는 Compute CS에 머신 이미지와 Shape를 지정하여 생성한 가상머신이다. Instance에 지정한 Shape은 CPU와 메모리 자원에 대한 정의이며, Shape에 정의된 자원이 Instance에 할당된다.
  Instance Shapshot  정의: Instance Snapshot은 인스턴스의 비 지속성 부트 디스크의 상태 정보를 챕처한 후, 이 정보를 이용하여 만든 머신 이미지이다." />
@@ -57,7 +57,7 @@ Image list  정의: Image List는 Compute CS의 머신 이미지 목록이다. I
 		<li class="menu__item "><a class="menu__link" href="/opc/" >ORACLE CLOUD 소개</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-iaas/" >OPC IAAS</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-paas/" >OPC PAAS</a></li>
-		<li class="menu__item "><a class="menu__link" href="/opc-terminology/" >오라클 용어 정리</a></li>
+		<li class="menu__item "><a class="menu__link" href="/opc-terminology/" >오라클 용어사전</a></li>
 		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby"target='_blank' >오라클 클라우드 챗팅룸</a></li>
 	</ul>
 </nav>
@@ -69,7 +69,7 @@ Image list  정의: Image List는 Compute CS의 머신 이미지 목록이다. I
 <div class="main-content content" role="main" itemprop="mainContentOfPage">
 	<article class="post">
 		<header class="post__header clearfix">
-			<h1 class="post__title">Oracle Compute Cloud Service의 용어 정리</h1>
+			<h1 class="post__title">Oracle Compute CS 용어사전</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
 				<time class="post__meta-date" datetime="2017-04-17 15:36:33 &#43;0900 &#43;0900">April 17, 2017</time>
@@ -78,7 +78,7 @@ Image list  정의: Image List는 Compute CS의 머신 이미지 목록이다. I
 		<div class="post__content clearfix">
 			
 
-<p>Oracle Compute Cloud Service의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.</p>
+<p>Oracle Compute CS의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.</p>
 
 <h3 id="image-list">Image list</h3>
 
@@ -120,7 +120,21 @@ Instance Snapshot은 인스턴스의 비 지속성 부트 디스크의 상태 �
 
 <h3 id="ip-networks">IP Networks</h3>
 
+<blockquote>
+<p>정의:
+IP Network을 사용하여 Oracle Compute CS 계정에 IP 서브넷을 정의할 수 있다.
+IP Network의 주소 범위는 IP Network 생성 시점에 설정하는 <code>address preifx</code>에 따라서 결정된다.
+IP Network에 할당되는 주소는 공유 네트워크(Shared Network)에 포함되지 않는다. 가상 머신을 IP Network에 추가하면
+인스턴스에 해당 IP Network(subnet)의 IP 주소가 할당된다.
+인스턴스에 할당되는 IP 주소를 완전하게 제어할 수 있다.</p>
+</blockquote>
+
 <h3 id="ip-network-exchange">IP Network Exchange</h3>
+
+<blockquote>
+<p>정의: IP Network Exchange는 복수의 IP Network(subnet) 사이의 통신을 가능하게 한다.
+Network Exchage에 연결된 IP Network에 위치하는 Instance들은 상호간의 NAT없이도 패킷을 교환할 수 있다.</p>
+</blockquote>
 
 <h3 id="ip-reservation">IP Reservation</h3>
 
@@ -201,7 +215,7 @@ s.setAttribute('data-timestamp', +new Date());
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
-				<a class="widget__link" href="/post/talkit_docs/" title="TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기">
+				<a class="widget__link" href="/post/talkit_dbcs/" title="TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기">
 							TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기</a>
 		  </li>
 			<li class="widget__item">
