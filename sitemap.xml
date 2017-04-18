@@ -12,6 +12,11 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/post/event_hub/</loc>
+    <lastmod>2017-04-13T18:37:41+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/occs_new_docker_container/</loc>
     <lastmod>2017-04-12T19:34:26+09:00</lastmod>
   </url>
@@ -74,6 +79,11 @@
   <url>
     <loc>http://www.oracloud.kr/post/iaas_vm/</loc>
     <lastmod>2017-03-05T22:20:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/example/markdown/</loc>
+    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
   </url>
   
   <url>
@@ -141,6 +151,12 @@
   <url>
     <loc>http://www.oracloud.kr/categories/docker/</loc>
     <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/example/</loc>
+    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
