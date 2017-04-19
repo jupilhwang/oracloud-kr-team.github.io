@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ravello on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</title>
+    <title>Ravello on Oracle Public Cloud - 기술블로그</title>
     <link>http://www.oracloud.kr/categories/ravello/</link>
-    <description>Recent content in Ravello on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
+    <description>Recent content in Ravello on Oracle Public Cloud - 기술블로그</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
     <lastBuildDate>Sat, 25 Mar 2017 11:23:39 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/categories/ravello/index.xml" rel="self" type="application/rss+xml" />

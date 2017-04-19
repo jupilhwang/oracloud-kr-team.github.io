@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oracle on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</title>
+    <title>Oracle on Oracle Public Cloud - 기술블로그</title>
     <link>http://www.oracloud.kr/tags/oracle/</link>
-    <description>Recent content in Oracle on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
+    <description>Recent content in Oracle on Oracle Public Cloud - 기술블로그</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
     <lastBuildDate>Wed, 12 Apr 2017 13:20:12 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
