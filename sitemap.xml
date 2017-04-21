@@ -184,6 +184,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/object-storage/</loc>
+    <lastmod>2017-03-07T08:54:32+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/occs/</loc>
     <lastmod>2017-03-20T19:01:16+09:00</lastmod>
     <priority>0</priority>
@@ -246,6 +252,12 @@
   <url>
     <loc>http://www.oracloud.kr/tags/ssh/</loc>
     <lastmod>2016-04-21T12:07:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/storage/</loc>
+    <lastmod>2017-03-07T08:54:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
