@@ -27,6 +27,11 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/post/ravello_demo/</loc>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/occs-new-inst/</loc>
     <lastmod>2017-04-05T19:36:38+09:00</lastmod>
   </url>
@@ -64,6 +69,11 @@
   <url>
     <loc>http://www.oracloud.kr/post/docker_in_oc/</loc>
     <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/post/ravello_overview/</loc>
+    <lastmod>2017-03-15T14:35:14+09:00</lastmod>
   </url>
   
   <url>
@@ -167,7 +177,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/categories/iaas/</loc>
-    <lastmod>2017-03-10T22:42:46+09:00</lastmod>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -180,6 +190,12 @@
   <url>
     <loc>http://www.oracloud.kr/tags/monitoring/</loc>
     <lastmod>2017-04-21T15:00:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/nested-virtualization/</loc>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -221,7 +237,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/oracle-cloud/</loc>
-    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -239,13 +255,13 @@
   
   <url>
     <loc>http://www.oracloud.kr/categories/ravello/</loc>
-    <lastmod>2017-03-25T11:23:39+09:00</lastmod>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.oracloud.kr/tags/ravello/</loc>
-    <lastmod>2017-03-25T11:23:39+09:00</lastmod>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
