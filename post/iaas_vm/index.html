@@ -38,6 +38,7 @@
 <link rel="stylesheet" href="http://www.oracloud.kr/css/minsu.css" type="text/css" media="all" />
 <script type="text/javascript" src="http://www.oracloud.kr/js/scripts.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="/img/icon/oracle.png" />
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=bsh&amp;skin=sons-of-obsidian"></script>
 
 
 
@@ -124,8 +125,8 @@ OPC에 인스턴스를 생성하는 과정에는 접근할 컴퓨터의 SSH 공�
 
 <p>리눅스와 OS X에서 OPC의 인스턴스에 접속할 때 사용되는 암호화 키는 다음과 같은 명령으로 생성됩니다.</p>
 
-<pre><code class="language-bash">ssh-keygen -t rsa
-</code></pre>
+<pre class="prettyprint">ssh-keygen -t rsa
+</pre>
 
 <p>[그림 1]은 ssh-keygen 명령으로 암호화 키를 생성하는 스크린 샷입니다.
 ssh-keygen 명령으로 암호화 키를 생성할 때 기본 파일 생성 디렉터리와 파일명은 다음과 같습니다.</p>
@@ -135,7 +136,9 @@ ssh-keygen 명령으로 암호화 키를 생성할 때 기본 파일 생성 디�
 <li>기본 파일명: id_rsa / id_rsa.pub</li>
 </ul>
 
-<pre><code class="language-bash">taewan@.ssh $pwd
+<pre class="prettyprint">
+
+taewan@.ssh $pwd
 /Users/taewan/.ssh
 taewan@.ssh $ls -al
 drwx------   24 taewan  staff   816 10 11 15:15 .
@@ -143,7 +146,8 @@ drwxr-xr-x+ 147 taewan  staff  4998 10 11 15:15 ..
 -rw-------    1 taewan  staff  1675 10 11 13:58 id_rsa
 -rw-------    1 taewan  staff   415 10 11 13:58 id_rsa.pub
 taewan@.ssh $
-</code></pre>
+
+</pre>
 
 <ul>
 <li>그림 1. ssh-keygen 명령을 이용한 암호화키 생성
@@ -640,7 +644,7 @@ public-internet을 선택하고 <code>Create</code> 버튼을 클릭합니다.</
 		<a class="post-nav__link" href="http://www.oracloud.kr/post/accont/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">오라클 클라우드 계정 생성하기</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="http://www.oracloud.kr/post/win-vm/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">오라클 클라우드에서 window VM 인스턴스 생성</p></a>
+		<a class="post-nav__link" href="http://www.oracloud.kr/post/objest-storage-replication/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Oracle Storage Cloud Serivce 기본 정책 설정</p></a>
 	</div>
 </nav>
 
@@ -748,7 +752,7 @@ s.setAttribute('data-timestamp', +new Date());
 	<h4 class="widget__title">테그</h4>
 	<div class="widget__content">
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/acc" title="acc">acc (1)</a>
-		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/cloud" title="cloud">cloud (6)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/cloud" title="cloud">cloud (7)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/container" title="container">container (2)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/dbcs" title="dbcs">dbcs (2)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/docker" title="docker">docker (4)</a>
@@ -759,6 +763,7 @@ s.setAttribute('data-timestamp', +new Date());
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/oracle" title="oracle">oracle (5)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/oracle-cloud" title="oracle-cloud">oracle-cloud (2)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/ravello" title="ravello">ravello (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/ssh" title="ssh">ssh (1)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/talkit" title="talkit">talkit (2)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/tutorial" title="tutorial">tutorial (4)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/virtualization" title="virtualization">virtualization (2)</a>

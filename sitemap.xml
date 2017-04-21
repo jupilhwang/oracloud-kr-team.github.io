@@ -77,6 +77,11 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/post/objest-storage-replication/</loc>
+    <lastmod>2017-03-07T08:54:32+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/iaas_vm/</loc>
     <lastmod>2017-03-05T22:20:25+09:00</lastmod>
   </url>
@@ -97,8 +102,8 @@
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/post/objest-storage-replication/</loc>
-    <lastmod>2016-03-07T08:54:32+09:00</lastmod>
+    <loc>http://www.oracloud.kr/post/ssh_key/</loc>
+    <lastmod>2016-04-21T12:07:16+09:00</lastmod>
   </url>
   
   <url>
@@ -235,6 +240,12 @@
   <url>
     <loc>http://www.oracloud.kr/categories/ravello/</loc>
     <lastmod>2017-03-25T11:23:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/ssh/</loc>
+    <lastmod>2016-04-21T12:07:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
