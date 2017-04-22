@@ -206,6 +206,18 @@ Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 
     </item>
     
     <item>
+      <title>ssh config 설정 방법</title>
+      <link>http://www.oracloud.kr/post/ssh_config/</link>
+      <pubDate>Mon, 06 Mar 2017 12:07:16 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/ssh_config/</guid>
+      <description>하나의 컴퓨터에서 어려 개의 ssh 키를 사용하면, SSH 접속에 사용하는 ssh 명령이 복잡해지는 단점이 있습니다. 이러한 복잡성은 ssh config 파일을 이용하여 해결할 수 있습니다.
+이 문서는 ssh 키 파일을 이미 갖고있는 것을 전제로 합니다. 아직 SSH 키를 생성하지 않은 상태라면, 다음 문서를 참조하시기 바랍니다.
+ 윈도우, 리눅스, 맥에서 ssh 보안키 생성  ssh 명령 기본 사용법 ssh의 기본 사용법은 다음과 같습니다.
+ ssh 사용자ID@서버명  다음과 같은 명령을 내릴 때 ssh 명령은 &amp;ldquo;~/.</description>
+    </item>
+    
+    <item>
       <title>오라클 IaaS를 이용한 VM 인스턴스 생성</title>
       <link>http://www.oracloud.kr/post/iaas_vm/</link>
       <pubDate>Sun, 05 Mar 2017 22:20:25 +0900</pubDate>
@@ -214,6 +226,18 @@ Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 
       <description>오라클 클라우드의 IaaS 서비스에서 Ubuntu 14.04를 VM 인스턴스로 만드는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud의 계정이 필요합니다. 계정을 생성하는 방법에 대해서는 &amp;ldquo;오라클 클라우드 계정 생성하기&amp;rdquo; 를 참조하시기 바랍니다.
 Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 작성되었습니다. 이 문서를 윈도우에서 실습하실 경우에는 PUTTY와 같은 Terminal을 사용하는 부분과 SSH-KEYGEN 을 사용하는 절차가 달라질 것입니다. 이 부분에 대해서는 별도 문서로 정리하겠습니다.
 오라클 클라우드 VM 생성 실습은 약 10~15분 정도 소요됩니다.</description>
+    </item>
+    
+    <item>
+      <title>윈도우, 리눅스, 맥에서 ssh 보안키 생성</title>
+      <link>http://www.oracloud.kr/post/ssh_key/</link>
+      <pubDate>Sat, 04 Mar 2017 12:07:16 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/ssh_key/</guid>
+      <description>클라우드 서비스로 만든 가상 서버에 안전한 로그인을 하기 위해서 SSH(Secure Shell) 프로토콜을 사용하는 것이 일반적입니다. SSH 프로토콜은 안전하지 못한 네트워크에서 강력한 인증과 안전한 통신을 가능하게 합니다. SSH 프로토콜에서 패스워드 입력없이 로그인하기 위해서는 인증서가 필요하며, 기본 포트는 22번입니다.
+SSH 프로토콜에 대한 자세한 내용은 다음 문서를 참조하시기 바랍니다.
+ 오픈 튜토리얼: SSH 원격제어 오픈 튜토리얼: SSH 키  이 문서에서는 다음 내용을 다루겠습니다.
+ 운영체제별 SSH 키 생성 방법 (window, linux, osx) SSH 키 설치 방법 ssh config를 이용한 ssh 명령 단순하게 사용하기  인증서 생성 방법 각 운영체제(Linux, OSX, Window)의 SSH 키 생성 방법에 대하여 정리하겠습니다.</description>
     </item>
     
     <item>
@@ -249,19 +273,6 @@ Oracle Cloud 계정 등록 절차 오라클 클라우드의 계정 등록 절차
 oracloud.kr은 오라클 클라우드에 대한 정보가 필요하신 한국 개발자 커뮤니티와 고객분에게 오라클 클라우드 관련 정보를 신속하게 제공하는 것을 목표로 합니다.
 oracloud.kr에서는 다음과 같은 정보를 제공할 예정입니다.
  오라클 클라우드 최신 변경 사항 공지 오라클 클라우드 최신 뉴스 오라클 클라우드 튜토리얼 오라클 클라우드 사용법 오라클 클라우드 발표 자료 배포  oracloud.kr에서는 댓글을 위한 Disqus 서비스와 채팅 서비스인 gitter를 사용하고 있습니다. oracloud.kr에 문의 사항이 있으실 경우에는 Disqus와 gitter에 글을 남겨 주시기 바랍니다.</description>
-    </item>
-    
-    <item>
-      <title>윈도우, 리눅스, 맥에서 ssh 보안키 생성</title>
-      <link>http://www.oracloud.kr/post/ssh_key/</link>
-      <pubDate>Thu, 21 Apr 2016 12:07:16 +0900</pubDate>
-      
-      <guid>http://www.oracloud.kr/post/ssh_key/</guid>
-      <description>def function(a, b): kkk kkk  ddd  *[HTML]: HyperText Markup Language
-각주 1 는 이렇게 만든다.
-morngo fdfd fdfdfsfsfdfsfdsfsfsfdfsfsfsdfsfdsfsfsfafa  기울여쓰기(italic) 기울여쓰기(italic) 굵게쓰기(bold) 굵게쓰기(bold)
- 인용문. * 인용 목록 * 인용 목록
-  각주다. [return]   </description>
     </item>
     
   </channel>
