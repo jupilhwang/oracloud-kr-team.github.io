@@ -17,9 +17,9 @@
       <pubDate>Mon, 20 Mar 2017 19:01:16 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/docker_in_oc/</guid>
-      <description>오라클 클라우드에서 docker를 사용하는 3가지 방법이 있습니다. 첫 번째는 Oracle Compute에 직접 Docker와 Orchestration tool(Kubernetes, docker-swarm, marathon)을 직접 Oracle Cloud의 VM에 설치해서 사용하는 것입니다. 두 번째는 Oracle Cloud에서 IaaS 형태로 제공하는 Oracle Container Cloud Serivce (이하 OCCS)를 사용하는 것입니다. 세 번째는 Oracle Cloud에서 제공하는 PaaS 서비스 Oracle Application Container Cloud(이하 Oracle ACC)를 사용하는 것입니다.
-Oracle Cloud에서 Docker를 사용하는 3가지 방식에 대하여 다음과 같이 분류하고, 유형별로 살펴보겠습니다.
- DIY 방식: Oracle Compute CS에 직접 설치 OCCS: 오라클이 IaaS 서비스 형태로 제공하는 Container Service Oracle ACC: 오라클이 PaaS 형태로 제공하는 Container Service</description>
+      <description>오라클 클라우드에서 docker를 사용하는 3가지 방법이 있습니다. 첫 번째는 Oracle cloud의 가상머신에 Docker와 Orchestration tool(Kubernetes, docker-swarm, marathon)을 직접 설치하고 사용하는 것입니다. 두 번째는 Oracle Cloud가 IaaS 형태로 제공하는 Oracle Container Cloud Serivce (이하 OCCS)를 사용하는 것입니다. 세 번째는 Oracle Cloud가 PaaS 형태로 제공하는 Oracle Application Container Cloud(이하 Oracle ACC)를 사용하는 것입니다.
+Oracle Cloud에서 Docker를 사용하는 방식을 다음과 같이 분류할 수 있습니다.
+ DIY 방식: Oracle Compute CS에 직접 설치 IAAS 방식: Oracle Container Cloud Service (OCCS) PAAS 방식: Oracle Application Container Service (Oracle ACC)  Type 1.</description>
     </item>
     
   </channel>
