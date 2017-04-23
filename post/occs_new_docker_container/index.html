@@ -236,7 +236,9 @@
 <img src="https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step080.jpg" alt="" /></li>
 </ul>
 
-<h2 id="hello-world-컨테이너-배포">&lsquo;Hello World&rsquo; 컨테이너 배포</h2>
+<h2 id="서비스-배포-및-occs-기본-기능">서비스 배포 및 OCCS 기본 기능</h2>
+
+<h3 id="helloworld-서비스-배포">HelloWorld 서비스 배포</h3>
 
 <p>이제 Nginx에서 동작하는 Hello World 웹 애플리케이션 더커 이미지를 배포하여 컨테이너를 생성할 것입니다.
 Contaienr 콘솔 대시보드의 왼쪽 메뉴에서 &lt;그림 10&gt;와 같이 <code>Services</code> 메뉴를 클릭하면, OCCS에 빌트인으로 등록되어 있는 23개 서비스 목록이 출력됩니다.
@@ -432,6 +434,8 @@ OCCS의 Service를 시작하면 컨테이너 네트워크 구성 정보가 Servi
 <li>그림 27. Service Discovery 컨테이너 등록 정보 조회
 <img src="https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step270.jpg" alt="" /></li>
 </ul>
+
+<h2 id="stack-배포-scale-out">Stack 배포 &amp; Scale-out</h2>
 
 <h3 id="stack-배포">Stack 배포</h3>
 
@@ -695,13 +699,17 @@ s.setAttribute('data-timestamp', +new Date());
 <li><a href="#oracle-cloud-로그인-및-occs-서비스-콘솔">Oracle Cloud 로그인 및 OCCS 서비스 콘솔</a></li>
 <li><a href="#occs-컨테이너-콘솔-로그인">OCCS 컨테이너 콘솔 로그인</a></li>
 </ul></li>
-<li><a href="#hello-world-컨테이너-배포">&lsquo;Hello World&rsquo; 컨테이너 배포</a>
+<li><a href="#서비스-배포-및-occs-기본-기능">서비스 배포 및 OCCS 기본 기능</a>
 <ul>
+<li><a href="#helloworld-서비스-배포">HelloWorld 서비스 배포</a></li>
 <li><a href="#resource-pool">Resource Pool</a></li>
 <li><a href="#컨테이너-조회-및-중지">컨테이너 조회 및 중지</a></li>
 <li><a href="#이미지-조회">이미지 조회</a></li>
 <li><a href="#registries-service">Registries Service</a></li>
 <li><a href="#service-discovery">Service Discovery</a></li>
+</ul></li>
+<li><a href="#stack-배포-scale-out">Stack 배포 &amp; Scale-out</a>
+<ul>
 <li><a href="#stack-배포">Stack 배포</a></li>
 <li><a href="#stack-scale-out">Stack scale-out</a></li>
 <li><a href="#컨테이너-로그-조회">컨테이너 로그 조회</a></li>
