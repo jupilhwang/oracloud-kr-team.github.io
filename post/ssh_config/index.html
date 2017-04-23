@@ -87,10 +87,10 @@
 			</figure>
 			
 
-<p>하나의 컴퓨터에서 어려 개의 ssh 키를 사용하면, SSH 접속에 사용하는 ssh 명령이 복잡해지는 단점이 있습니다.
-이러한 복잡성은 ssh config 파일을 이용하여 해결할 수 있습니다.</p>
+<p>하나의 컴퓨터에서 복수의 SSH 키를 사용할 경우 SSH 접속에 사용하는 ssh 명령이 복잡해지는 단점이 있습니다.
+이러한 복잡성은 SSH config 파일을 이용하여 해결할 수 있습니다.</p>
 
-<p>이 문서는 ssh 키 파일을 이미 갖고있는 것을 전제로 합니다. 아직 SSH 키를 생성하지 않은 상태라면,
+<p>이 문서는 SSH 키 파일을 이미 갖고있는 것을 전제로 합니다. 아직 SSH 키를 생성하지 않은 상태라면,
 다음 문서를 참조하시기 바랍니다.</p>
 
 <ul>
@@ -99,7 +99,7 @@
 
 <h2 id="ssh-명령-기본-사용법">ssh 명령 기본 사용법</h2>
 
-<p>ssh의 기본 사용법은 다음과 같습니다.</p>
+<p>ssh 명령의 기본 사용법은 다음과 같습니다.</p>
 
 <pre class="prettyprint">
 > ssh 사용자ID@서버명
@@ -129,7 +129,7 @@ Last login: Mon Feb  1 02:10:40 2016 from 211.210.76.6
 ubuntu@ip-172-31-11-175:~$
 </pre>
 
-<p>위 명령은 ssh 키 파일을 직접 지정해야 하므로 사용하기 부담스러운 면이 있습니다.
+<p>위 명령은 SSH 키 파일을 직접 지정해야 하므로 사용하기 부담스러운 면이 있습니다.
 ssh 명령을 단순하게 사용하는 방법의 하나는 다음과 같은 alias를 사용하는 것입니다.</p>
 
 <pre class="prettyprint">
@@ -141,7 +141,7 @@ Last login: Mon Feb  1 02:23:47 2016 from 211.210.76.6
 ubuntu@ip-172-31-11-175:~$
 </pre>
 
-<p>alias를 사용하면 명령을 쉽게 입력할 수 는 있지만 별도의 alias를 관리한다는 것이 부담스럽습니다.<br />
+<p>alias를 사용하면 명령을 쉽게 입력할 수 는 있지만 별도로 alias를 관리한다는 부담이 증가합니다.<br />
 또한 ssh 명령은 인증서, 서버 포트, 포트 포워딩 등 다양한 설정 옵션이 있으므로,
 다양한 옵션 변경에 효과적으로 대응하기에 어렵다는 단점이 있습니다.</p>
 
@@ -170,9 +170,9 @@ Host bitbucket.org
     IdentityFile ~/.ssh/id_rsa_@@@@@@@@@@@@
 </pre>
 
-<p>위 설정 파일은 2개의 아마존 서버와 github 및 bitbucket 서버 ssh 설정이 등록되어 있습니다.
+<p>위 설정 파일은 2개의 아마존 서버와 github 및 bitbucket 서버 설정으로 구성되어 있습니다.
 위 예제에서 아마존 AWS 서버는 다음의 두 가지 방법으로 로그인할 수 있습니다.
-ssh config 설정을 사용할 경우,
+SSH config 설정을 사용할 경우,
 복수의 인증서를 사용하는 상황에서도 다음과 같이 ssh 명령을 단순하게 유지할 수 있습니다.</p>
 
 <pre class="prettyprint">
@@ -432,7 +432,7 @@ ssh 키 파일 관리가 필요한 상황입니다.</p>
 		<a class="post-nav__link" href="http://www.oracloud.kr/post/iaas_vm/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">오라클 IaaS를 이용한 VM 인스턴스 생성</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="http://www.oracloud.kr/post/objest-storage-replication/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Oracle Storage Cloud Serivce 기본 정책 설정</p></a>
+		<a class="post-nav__link" href="http://www.oracloud.kr/post/objest-storage-replication/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Oracle Storage Cloud Serivce 활성화</p></a>
 	</div>
 </nav>
 
