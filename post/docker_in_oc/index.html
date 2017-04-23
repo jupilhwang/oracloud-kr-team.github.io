@@ -151,9 +151,9 @@ Production 환경을 DIY 방식으로 구성하려면 다음과 같은 사항을
 
 <p>오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine의 소프트웨어를 통합하였습니다. 이 결과물이 Oracle Container Cloud Service입니다.</p>
 
-<p>OCCS를 이용하여 효과적이고 안정적인 Docker 환경을 구성할 수 있습니다. 또한 ALM(Application Lifecycle Manatment) 툴과 연계된 시스템 자동화를 구성할 수 있습니다. 오라클 클라우드가 제공하는 Developer CS<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>를 OCCS과 함께 사용할 경우 효율적인 DevOps 환경을 구성할 수 있습니다. Developer CS는 오라클 클라우드가 제공하는 개발 환경 서비스입니다. OCCS 사용 시 Oracle Developer CS는 무상으로 제공됩니다. Developer CS는 Git, 이슈트래커, Jenkins, Wiki가 결합된 애자일 개발 환경을 클라우드로 제공하는 서비스입니다. Developer CS는 별도의 블로그 포스트 시리즈로 다루겠습니다.</p>
+<p>OCCS를 이용하여 효과적이고 안정적인 Docker 환경을 구성할 수 있습니다. 또한 ALM(Application Lifecycle Manatment) 툴과 연계된 시스템 자동화를 구성할 수 있습니다. 오라클 클라우드가 제공하는 Developer CS[^1]를 OCCS과 함께 사용할 경우 효율적인 DevOps 환경을 구성할 수 있습니다. Developer CS는 오라클 클라우드가 제공하는 개발 환경 서비스입니다. OCCS 사용 시 Oracle Developer CS는 무상으로 제공됩니다. Developer CS는 Git, 이슈트래커, Jenkins, Wiki가 결합된 애자일 개발 환경을 클라우드로 제공하는 서비스입니다. Developer CS는 별도의 블로그 포스트 시리즈로 다루겠습니다.</p>
 
-<p><sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">2</a></sup>Developer CS는 Oracle Developer Cloud Service의 약식 표현입니다. Oracle Developer Cloud Service는 git, genkins, wiki, issue tracker를 하나의 UI로 제공하는 통합 서비스입니다. Oracle DBCS, OCCS, Oracle ACC, Oracle JCS 등의 사용자에게는 무상으로 제공되는 서비스입니다.</p>
+<p>[^1]Developer CS는 Oracle Developer Cloud Service의 약식 표현입니다. Oracle Developer Cloud Service는 git, genkins, wiki, issue tracker를 하나의 UI로 제공하는 통합 서비스입니다. Oracle DBCS, OCCS, Oracle ACC, Oracle JCS 등의 사용자에게는 무상으로 제공되는 서비스입니다.</p>
 
 <p>OCCS의 주요 기능은 다음과 같습니다.</p>
 
@@ -238,7 +238,7 @@ Production 환경을 DIY 방식으로 구성하려면 다음과 같은 사항을
 
 <ul>
 <li>사전에 설정된 Java, Node.js, PHP, Python을 위한 환경 제공 (Docker)</li>
-<li>Java SE는 Java Flight Recorder<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">3</a></sup>, Java Mission Control<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">4</a></sup>, 고급 메모리 관리 기능, 주지적 패치 제공</li>
+<li>Java SE는 Java Flight Recorder<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">1</a></sup>, Java Mission Control<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">2</a></sup>, 고급 메모리 관리 기능, 주지적 패치 제공</li>
 <li>주요 프레임워크(Spring, play, jersey)과 컨테이너(Tomcat) 지원<br /></li>
 <li>JVM 기반 언어 지원:  JRuby</li>
 <li>엔터프라이즈급 지원</li>
@@ -303,14 +303,10 @@ Production 환경을 DIY 방식으로 구성하려면 다음과 같은 사항을
 <hr />
 
 <ol>
-<li id="fn:1">Java Flight Recorder(JFR): 동작하는 JVM과 애플리케이션을 상세 기록함. 이 기록 데이터는 execution profile, GC 통계, optimization decisions, 객체 할당, heap 통계, Lock과 I/O 지연 이벤트를 포함합니다. 이 정보는 Java Mission Control에서 분석 가능합니다. (상제 정보는 다음 링크를 참조: <a href="https://blogs.oracle.com/javakr/entry/java_flight_recorder_jfr_%EC%82%AC%EC%9A%A9">JFR 사용법</a>)
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:1">Java Flight Recorder(JFR): 동작하는 JVM과 애플리케이션을 상세 기록함. 이 기록 데이터는 execution profile, GC 통계, optimization decisions, 객체 할당, heap 통계, Lock과 I/O 지연 이벤트를 포함합니다. 이 정보는 Java Mission Control에서 분석 가능합니다. (상제 정보는 다음 링크를 참조: <a href="https://blogs.oracle.com/javakr/entry/java_flight_recorder_jfr_%EC%82%AC%EC%9A%A9">JFR 사용법</a>)
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:1">Java Flight Recorder(JFR): 동작하는 JVM과 애플리케이션을 상세 기록함. 이 기록 데이터는 execution profile, GC 통계, optimization decisions, 객체 할당, heap 통계, Lock과 I/O 지연 이벤트를 포함합니다. 이 정보는 Java Mission Control에서 분석 가능합니다. (상제 정보는 다음 링크를 참조: <a href="https://blogs.oracle.com/javakr/entry/java_flight_recorder_jfr_%EC%82%AC%EC%9A%A9">JFR 사용법</a>)
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">Java Mission Control: Java Mission Control 이란 오라클에서 제공되는 Java Advanced 제품의 일부로, 엔터프라이즈의 자바 애플리케이션의 상태를 실시간으로 모니터링 할 수 있는 도구다. (상제 정보는 다음 링크를 참조: <a href="https://blogs.oracle.com/javakr/entry/java_mission_control_%EC%82%AC%EC%9A%A9%EB%B2%95">Java Mission Control 사용법</a>)
+<li id="fn:2">Java Flight Recorder(JFR): 동작하는 JVM과 애플리케이션을 상세 기록함. 이 기록 데이터는 execution profile, GC 통계, optimization decisions, 객체 할당, heap 통계, Lock과 I/O 지연 이벤트를 포함합니다. 이 정보는 Java Mission Control에서 분석 가능합니다. (상제 정보는 다음 링크를 참조: <a href="https://blogs.oracle.com/javakr/entry/java_flight_recorder_jfr_%EC%82%AC%EC%9A%A9">JFR 사용법</a>)
  <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3">Java Mission Control: Java Mission Control 이란 오라클에서 제공되는 Java Advanced 제품의 일부로, 엔터프라이즈의 자바 애플리케이션의 상태를 실시간으로 모니터링 할 수 있는 도구다. (상제 정보는 다음 링크를 참조: <a href="https://blogs.oracle.com/javakr/entry/java_mission_control_%EC%82%AC%EC%9A%A9%EB%B2%95">Java Mission Control 사용법</a>)
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
 </ol>
 </div>
 
