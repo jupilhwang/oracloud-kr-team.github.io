@@ -6,10 +6,21 @@
     <description>Recent content in Oracle Cloud on Oracle Public Cloud - 기술블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 07 Apr 2017 16:05:59 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 24 Apr 2017 11:00:57 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/tags/oracle-cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>oracloud.kr: 오라클 클라우드 기술 블로그</title>
+      <link>http://www.oracloud.kr/oraclooud/</link>
+      <pubDate>Mon, 24 Apr 2017 11:00:57 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/oraclooud/</guid>
+      <description>oracloud.kr은 오라클 클라우드를 핵심 주제로 하는 기술 블로그입니다.
+oracloud.kr은 한국 오라클의 공식 블로그가 아니며, 한국 오라클의 DBU 소속 클라우드 세일즈 컨설팅 팀 이 운영하는 팀 블로그입니다. 공식 팀명은 한국 오라클의 DBU 소속 클라우드 세일즈 컨설팅 팀이지만 편의상 팀명을 oracloud.kr 팀이라고 하겠습니다.
+ oracloud.kr은 한국 오라클의 공식 블로그가 아니며, 한국 오라클의 어떠한 대표성도 갖지 않습니다. 블로그의 내용은 시점에 따라서 한국 오라클의 공식적인 입장과 다를 수 있습니다. 블로그의 콘텐츠는 oracloud.kr 팀원들의 개인적인 노력과 열정으로 만들어지고 있습니다.</description>
+    </item>
     
     <item>
       <title>Oracle Ravello Cloud Service 데모</title>
