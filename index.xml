@@ -53,7 +53,7 @@ Image list  정의: Image List는 Compute CS의 머신 이미지 목록이다. I
       <guid>http://www.oracloud.kr/post/occs_new_docker_container/</guid>
       <description>Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공하는 Docker 서비스입니다. OCCS에는 Kubernetes(k8s), docker-swarm 그리고 marathon 과 유사한 container orchestration 도구가 포함되어 있습니다.
 이 문서는 이미 OCCS 인스턴스가 생성되었다는 것을 전제로 합니다. 오라클 클라우드 계정이 확보되지 않았거나 OCCS 인스턴스를 만들지 않은 상태라면, [오라클 클라우드 계정 생성하기] 문서와 [Oracle Container CS 생성 절차] 문서를 참조하여 계정과 인스턴스를 생성하시기 바랍니다.
-OCCS 용어 정리    Container CS 용어 설명     Service OCCS를 사용하여 생성, 배포, 관리 가능한 고수준 설정 객체, Docker 이미지에 OCCS관련 설정을 추가한 것   Stack 복수의 Serivce로 구성된 이미지 관리 체계.</description>
+OCCS 용어 정리    Container CS 용어 설명     Service OCCS를 사용하여 생성, 배포, 관리 가능한 고수준 설정 객체, Docker 이미지에 OCCS 관련 설정을 추가한 것   Stack 복수의 Serivce로 구성된 이미지 관리 체계.</description>
     </item>
     
     <item>
