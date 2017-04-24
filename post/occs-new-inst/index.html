@@ -84,9 +84,9 @@
 		<div class="post__content clearfix">
 			
 
-<p>Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에  StackEngine을 인수하였습니다. (<a href="https://www.oracle.com/corporate/acquisitions/stackengine/index.html">관련 공지</a>). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 kubernetes(k8s), docker-swarm 그리고 marathon 과 같은 container orchestration 도구입니다.</p>
+<p>Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에  StackEngine을 인수하였습니다. (<a href="https://www.oracle.com/corporate/acquisitions/stackengine/index.html">관련 공지</a>). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 kubernetes(k8s), docker-swarm 그리고 marathon과 같은 container orchestration 도구입니다.</p>
 
-<p>오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine을 통합하였습니다. 이 결과물이 <a href="https://cloud.oracle.com/ko_KR/container">Oracle Container Cloud Serivce</a> 입니다.</p>
+<p>오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine을 통합하였습니다. 이 결과물이 <a href="https://cloud.oracle.com/ko_KR/container">Oracle Container Cloud Service</a> 입니다.</p>
 
 <p>Oracle Container Clod Service를 통해서 Docker 컨테이너의 클러스터 구성, 인스턴스 배포 및 운영, 모니터링을 효과적으로 할 수 있습니다. 이러한 전체 과정에 대하여 웹 기반의 UI와 Rest API를 제공하기 때문에 사용의 편리성과 프로세스 자동화를 효과적으로 구성할 수 있습니다.</p>
 
@@ -145,7 +145,7 @@
 
 <p>Trial 계정을 이용하여 최대 1개의 Manager node와 5개의 Worker node로 구성된 OCCS 인스턴스를 생성할 수 있습니다.</p>
 
-<h2 id="oracle-container-cloud-serivce-생성하기">Oracle Container Cloud Serivce 생성하기</h2>
+<h2 id="oracle-container-cloud-service-생성하기">Oracle Container Cloud Service 생성하기</h2>
 
 <p>OCCS 인스턴스를 생성하기에 앞서 cloud.oracle.com에 로그인해야 합니다. &lt;그림 1&gt;은 cloud.oracle.com의 초기화면입니다. 로그인하기 위해 초기 화면의 오른쪽 위에 위치하는 <code>Sign In</code> 메뉴를 클릭합니다.</p>
 
@@ -170,14 +170,14 @@
 
 <p>Trial 계정을 사용할 경우에는 &ldquo;Traditional Cloud Account&rdquo;를 선택해야 합니다.</p>
 
-<p>한국 사용자가 신청한 Trial 계정은 &ldquo;Public Cloud Serives - US&rdquo; 데이터 센터에 자원을 할당받습니다. 따라서 &ldquo;Public Cloud Serives - US&rdquo;를 선택하고 &ldquo;My Services&rdquo;를 클릭합니다.</p>
+<p>한국 사용자가 신청한 Trial 계정은 &ldquo;Public Cloud Services - US&rdquo; 데이터 센터에 자원을 할당받습니다. 따라서 &ldquo;Public Cloud Services - US&rdquo;를 선택하고 &ldquo;My Services&rdquo;를 클릭합니다.</p>
 
 <ul>
 <li>그림 2. 로그인을 위한 데이터 센터 선택
 <img src="https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-020.jpg" alt="" /></li>
 </ul>
 
-<p>&lt;그림 2&gt;에서 &ldquo;My Services&rdquo;를 클릭하면, &lt;그림 3&gt;의 도메인을 입력하는 페이지로 이동합니다. 도메인은 앞으로 사용할 클라우드 서비스를 묶는 단위입니다. 시스템 그룹 단위라고 생각할 수 있습니다. 클라우드 계정 생성시에 지정된 도메인 정보를 입력하고 &ldquo;실행&rdquo; 버튼을 클릭합니다.</p>
+<p>&lt;그림 2&gt;에서 &ldquo;My Services&rdquo;를 클릭하면, &lt;그림 3&gt;의 도메인을 입력하는 페이지로 이동합니다. 도메인은 앞으로 사용할 클라우드 서비스를 묶는 단위입니다. 시스템 그룹 단위라고 생각할 수 있습니다. 클라우드 계정 생성 시에 지정된 도메인 정보를 입력하고 &ldquo;실행&rdquo; 버튼을 클릭합니다.</p>
 
 <ul>
 <li>그림 3. 도메인 정보 입력
@@ -212,7 +212,7 @@
 <img src="https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-070.jpg" alt="" /></li>
 </ul>
 
-<p>계정 생성 후 Container 서비스에 처음 접근하는 경우에는 &lt;그림 8&gt;과 같이 컨테이너 서비스 환영 페이지로 이동합니다. OCCS 콘솔 페이지로 이동하기 위해서 &ldquo;Go to console&rdquo;버튼을 클릭합니다.</p>
+<p>계정 생성 후 Container 서비스에 처음 접근하는 경우에는 &lt;그림 8&gt;과 같이 컨테이너 서비스 환영 페이지로 이동합니다. OCCS 콘솔 페이지로 이동하기 위해서 &ldquo;Go to console&rdquo; 버튼을 클릭합니다.</p>
 
 <ul>
 <li>그림 8. Container Cloud Service 환영 페이지
@@ -322,7 +322,7 @@
 </tr>
 </table>
 
-<p>모든 정보를 입력한 후 &lt;그림 11&gt;과 같이 &ldquo;다음&rdquo; 버튼 클릭합니다.</p>
+<p>모든 정보를 입력한 후 &lt;그림 11&gt;과 같이 <code>다음</code> 버튼 클릭합니다.</p>
 
 <ul>
 <li>그림 11. OCCS 인스턴스 생성 정보 입력
@@ -330,14 +330,14 @@
 </ul>
 
 <p>&lt;그림 11&gt;에서 &ldquo;다음&rdquo; 버튼을 클릭하면 &lt;그림 12&gt;와 같이 입력 정보 확인 페이지로 이동합니다.
-&lt;그림 12&gt;에서 &ldquo;생성&rdquo; 버튼을 클릭하면 OCCS 인스턴스 생성이 시작됩니다.</p>
+&lt;그림 12&gt;에서 <code>생성</code> 버튼을 클릭하면 OCCS 인스턴스 생성이 시작됩니다.</p>
 
 <ul>
 <li>그림 12. 입력 정보 확인 페이지
 <img src="https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-120.jpg" alt="" /></li>
 </ul>
 
-<p>&lt;그림 12&gt;에서 &ldquo;생성&rdquo; 버튼을 클릭하면 &lt;그림 13&gt;과 같이 Oracle Container Cloud Service 콘솔 페이지로 이동합니다. &lt;그림 13&gt;에서 &ldquo;Status&rdquo; 속성이 &ldquo;Creating service &hellip;&ldquo;인 것을 확인할 수 있습니다.</p>
+<p>&lt;그림 12&gt;에서 <code>생성</code> 버튼을 클릭하면 &lt;그림 13&gt;과 같이 Oracle Container Cloud Service 콘솔 페이지로 이동합니다. &lt;그림 13&gt;에서 <code>Status</code> 속성이 <code>Creating service ...</code>인 것을 확인할 수 있습니다.</p>
 
 <ul>
 <li>그림 13. OCCS 인스턴스 생성 후 OCCS 콘솔 페이지 이동
@@ -489,7 +489,7 @@ s.setAttribute('data-timestamp', +new Date());
 <li><a href="#occs-서비스-인스턴스-구성">OCCS 서비스 인스턴스 구성</a></li>
 <li><a href="#oracle-cloud의-trial-account-자원-할당">Oracle Cloud의 Trial Account 자원 할당</a></li>
 </ul></li>
-<li><a href="#oracle-container-cloud-serivce-생성하기">Oracle Container Cloud Serivce 생성하기</a></li>
+<li><a href="#oracle-container-cloud-service-생성하기">Oracle Container Cloud Service 생성하기</a></li>
 <li><a href="#마치며">마치며&hellip;.</a></li>
 <li><a href="#참조">참조</a></li>
 </ul></li>
