@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<META http-equiv="Expires" content="-1">
+<META http-equiv="Pragma" content="no-cache">
+<META http-equiv="Cache-Control" content="No-Cache">
+
+<title>Oracle IaaS BMCS 환경에서 자동화 구축</title>
+<meta name="description" content="오라클 클라우드 기술 블로그">
+<meta name="generator" content="Hugo 0.21-DEV" />
+<meta property="og:title" content="Oracle IaaS BMCS 환경에서 자동화 구축" />
+<meta property="og:description" content="BMCS 환경에서 Terraform을 사용하는 방법에 대한 문서입니다" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.oracloud.kr/post/bmcs_terraform/" />
+
+
+
+<meta property="article:published_time" content="2017-04-17T17:15:48&#43;09:00"/>
+<meta property="article:modified_time" content="2017-04-17T17:15:48&#43;09:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="http://www.oracloud.kr/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://www.oracloud.kr/css/minsu.css" type="text/css" media="all" />
+<script type="text/javascript" src="http://www.oracloud.kr/js/scripts.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/img/icon/oracle.png" />
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=bsh&amp;skin=sons-of-obsidian"></script>
+
+
+
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="http://www.oracloud.kr/" title="Oracle Public Cloud - 기술블로그" rel="home">
+						<h1 class="logo__title">Oracle Public Cloud - 기술블로그</h1>
+						<h2 class="logo__tagline">한국오라클 DBU, 클라우드 세일즈 컨설팅팀</h2>
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/" title="블로그 메인 페이지 " >HOME</a></li>
+		<li class="menu__item "><a class="menu__link" href="/oraclooud/" title="oracloud.kr을 소개합니다. " >ORACLOUD.KR 소개</a></li>
+		<li class="menu__item "><a class="menu__link" href="/opc-iaas/" title="IaaS 서비스 관련 문서를 정리하는 페이지입니다." >IAAS 서비스</a></li>
+		<li class="menu__item "><a class="menu__link" href="/opc-paas/" title="PaaS 서비스 관련 문서를 정리하는 페이지입니다." >PAAS 서비스</a></li>
+		<li class="menu__item "><a class="menu__link" href="/opc_news/" title="" >ORACLE CLOUD 새소식</a></li>
+		<li class="menu__item "><a class="menu__link" href="/opc-terminology/" title="오라클 클라우드에서 각 서비스에서 사용하는 용어의 정의를 정리합니다." >OPC 용어사전</a></li>
+		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
+	</ul>
+</nav>
+
+		</header>
+		<div class="wrapper clearfix">
+
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Oracle IaaS BMCS 환경에서 자동화 구축</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2017-04-17 17:15:48 &#43;0900 &#43;0900">April 17, 2017</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/iaas" rel="category">iaas</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			
+
+<p>다음은 Oracle IaaS BMCS 환경에서 Terraform을 사용하여 자동화(Infrastructure as Code)하는 방법에 대해서 가이드 하는 문서입니다.</p>
+
+<p>Terraform에 대한 문서는 <a href="/post/terraform/">이곳</a>를 참고하십시오.</p>
+
+<h2 id="1-bmcs에서-terraform을-사용하기-위한-환경-구성">1. BMCS에서 Terraform을 사용하기 위한 환경 구성</h2>
+
+<p>BMCS에서 Terraform 을 사용하기 위해서는 먼저 VM을 생성한 후 해당 VM에 Terraform provider를 설치해야 합니다.</p>
+
+<h3 id="terraform-provider-설치">Terraform Provider 설치</h3>
+
+<p>BareMetal 용 Terraform Provider 는 <a href="https://github.com/oracle/terraform-provider-baremetal/releases">이곳</a>에서 해당 OS버전에 맞추어서 다운로드가 가능합니다. Linux용은
+<a href="https://github.com/oracle/terraform-provider-baremetal/releases/download/v1.0.3/linux.tar.gz">https://github.com/oracle/terraform-provider-baremetal/releases/download/v1.0.3/linux.tar.gz</a> 에서 다운로드 받으실 수 있습니다.</p>
+
+<p>원하는 위치에 linux.tar.gz을 풀고, Home directory에 다음과 같은 ~/.terraformrc 파일을 생성합니다. path_to_provider_binary 부분에 Terraform Provider를 설치한 디렉토리를 적어주시면 됩니다.</p>
+
+<pre class="prettyprint">
+providers {
+    baremetal = "path_to_provider_binary/terraform-provider-baremetal"
+}
+</pre>
+
+<h3 id="bmcs-관련-설정-api-용-key-생성-및-등록">BMCS 관련 설정 - API 용 key 생성 및 등록</h3>
+
+<p>SDK와 Tool을 사용하기 위해서는 API를 위한 PEM(Privacy Enhanced Mail)형식의 RSA Key pair가 필요합니다. BMCS Instance에 접속하기 위한 Key가 아닌 API 사용을 위한 Key입니다. SDK와 Tool에서 기본적으로 사용하는 디렉토리 위치는 ~/.oraclebmc 입니다.</p>
+
+<p>Private key 생성하는 절차는,
+<pre class="prettyprint">
+$ mkdir ~/.oraclebmc
+$ openssl genrsa –out ~/.oraclebmc/bmcs_api_key.pem 2048
+$ chmod go-r ~/.oraclebmc/bmcs_api_key.pem
+</pre></p>
+
+<p>Public key를 생성하는 절차는 아래와 같습니다.
+<pre class="prettyprint">
+$ openssl rsa –pubout –in ~/.oraclebmc/bmcs_api_key.pem –out ~/.oraclebmc/bmcs_api_key_public.pem
+</pre></p>
+
+<p>화면에 표시된 Public Key를 복사한 후,
+<pre class="prettyprint">
+$ cat ~/.oraclebmc/bmcs_api_key_public.pem
+</pre></p>
+
+<p>Key의 fingerprint를 확인합니다.
+<pre class="prettyprint">
+$ openssl rsa –pubout –outform DER –in ~/.oraclebmc/bmcs_api_key.pem | openssl md5 -c
+</pre></p>
+
+<p>SDK와 API사용 시 사용할 Public Key는 다음과 같은 화면에서 등록하고,</p>
+
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/bmcs_terraform/bmcsconsole1.jpg" alt="" /></p>
+
+<p>등록한 key는 아래처럼 확인 가능합니다.</p>
+
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/bmcs_terraform/bmcsconsole2.jpg" alt="" /></p>
+
+<h3 id="bmcs-오브젝트에-대한-id-확인">BMCS 오브젝트에 대한 ID 확인</h3>
+
+<p>BMCS의 모든 Object들은 OCID라는 Unique한 ID를 가지고 있습니다. SDK와 Cli에서 모든 Operation은 OCID를 이용합니다. Tenancy의 OCID는 BMCS의 모든 페이지의 하단에서 확인할 수 있습니다.</p>
+
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/bmcs_terraform/bmcsconsole3.jpg" alt="" /></p>
+
+<p>User OCID는 Identity/Users 화면에서 확인 할 수 있습니다.</p>
+
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/bmcs_terraform/bmcsconsole4.jpg" alt="" /></p>
+
+<h3 id="key-관련-정보-및-ocid-정보를-os에-설정">Key 관련 정보 및 OCID 정보를 OS에 설정</h3>
+
+<p>Baremetal을 사용하기 위한 Credential 정보를 위의  ~/.bash_profile에 환경변수로 설정합니다.</p>
+
+<pre class="prettyprint">
+export TF_VAR_tenancy_ocid=
+export TF_VAR_user_ocid=
+export TF_VAR_fingerprint=
+export TF_VAR_private_key_path=<fully qualified path>
+export TF_VAR_private_key_password=
+</pre>
+
+<h2 id="2-bmcs에서-terraform을-사용하여-환경-구성-vcn-생성-및-인스턴스-생성">2. BMCS에서 Terraform을 사용하여 환경 구성 (VCN 생성 및 인스턴스 생성)</h2>
+
+<p>다음은 BMCS의 주요 구성요소인 VCN을 생성하고 생성한 VCN에 인스턴스를 생성하는 예제입니다.</p>
+
+<h3 id="vcn-생성">VCN 생성</h3>
+
+<p>VCN 셩성시 사용하는 tf 파일을 살펴보면,</p>
+
+<pre class="prettyprint">
+variable "tenancy_ocid" {}
+variable "user_ocid" {}
+variable "fingerprint" {}
+variable "private_key_path" {}
+variable "compartment_ocid" {}
+
+provider "baremetal" {
+  tenancy_ocid = "${var.tenancy_ocid}"
+  user_ocid = "${var.user_ocid}"
+  fingerprint = "${var.fingerprint}"
+  private_key_path = "${var.private_key_path}"
+}
+
+resource "baremetal_core_virtual_network" "a_TF_managed_VCN" {
+  cidr_block = "10.0.0.0/16"
+  compartment_id = "${var.compartment_ocid}"
+  display_name = "a_TF_managed_VCN"
+}
+</pre>
+
+<p>아래의 명령어로 위의 파일을 사용하여 VCN을 생성합니다.</p>
+
+<pre class="prettyprint">
+$terraform apply
+</pre>
+
+<p>아래의 명령어로 사전에 수행과정을 simulation 해 볼 수 있습니다.
+<pre class="prettyprint">
+$terraform plan
+</pre></p>
+
+<h3 id="instance-생성">Instance 생성</h3>
+
+<p>Instance 생성시 사용하는 tf 파일입니다.</p>
+
+<pre class="prettyprint">
+variable "tenancy_ocid" {}
+variable "user_ocid" {}
+variable "fingerprint" {}
+variable "private_key_path" {}
+variable "compartment_ocid" {}
+
+
+provider "baremetal" {
+  tenancy_ocid = "${var.tenancy_ocid}"
+  user_ocid = "${var.user_ocid}"
+  fingerprint = "${var.fingerprint}"
+  private_key_path = "${var.private_key_path}"
+}
+
+# Note that the difference between launching a VM and BM instance is just a different shape name.
+
+resource "baremetal_core_instance" "BM_instance1" {
+  availability_domain = "ZGmQ:PHX-AD-3"
+  compartment_id = "${var.compartment_ocid}"
+  display_name = "BM_instance1"
+  image = "ocid1.image.oc1.phx.aaaaaaaazt3sfrz2lfbha6okihvh4bwaufikhilhsek43hpvzxitl47nv2bq"
+  shape = "BM.DenseIO1.36"
+  subnet_id = "ocid1.subnet.oc1.phx.aaaaaaaanvacprjbqaufwhibjkyolg27rmbgvxx372sbx64uxklvpdt4k3dq"
+  metadata {
+    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqetTkzFEESkXr731zsRMKcUlGBvj6UPfPwjg0sIIGJMpVh1moQM1EBxAyWdr01+x1Ff8xxhUwhhV1uGndGJxoFRAJp4U9vPbr3iVPJlTyAlNCQI0ohlnfCR5XqSswVfqAqyGOzJcdaRgV7qhywUXJFky+yVuhclFoiljrRuposn4RQCKxklFxovysrozRYmyIGWR93VIkh8sfb8tarycpqigACLhLtENAzkVT2yJg72ZXNrrOaTjc89BJ/SGh4NO9jkqYRC6xXKRv7XuJfO8T8mUud6+p27LHdxw+PINOUOQmikb7ScjuYVP1gV94/A7cKMrwvZwfi2dT1FHT0Ic+w== rsa-key-20160624"
+  }
+}
+
+resource "baremetal_core_instance" "BM_instance2" {
+  availability_domain = "ZGmQ:PHX-AD-3"
+  compartment_id = "${var.compartment_ocid}"
+  display_name = "BM_instance2"
+  image = "ocid1.image.oc1.phx.aaaaaaaazt3sfrz2lfbha6okihvh4bwaufikhilhsek43hpvzxitl47nv2bq"
+  shape = "BM.DenseIO1.36"
+  subnet_id = "ocid1.subnet.oc1.phx.aaaaaaaanvacprjbqaufwhibjkyolg27rmbgvxx372sbx64uxklvpdt4k3dq"
+  metadata {
+    ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqetTkzFEESkXr731zsRMKcUlGBvj6UPfPwjg0sIIGJMpVh1moQM1EBxAyWdr01+x1Ff8xxhUwhhV1uGndGJxoFRAJp4U9vPbr3iVPJlTyAlNCQI0ohlnfCR5XqSswVfqAqyGOzJcdaRgV7qhywUXJFky+yVuhclFoiljrRuposn4RQCKxklFxovysrozRYmyIGWR93VIkh8sfb8tarycpqigACLhLtENAzkVT2yJg72ZXNrrOaTjc89BJ/SGh4NO9jkqYRC6xXKRv7XuJfO8T8mUud6+p27LHdxw+PINOUOQmikb7ScjuYVP1gV94/A7cKMrwvZwfi2dT1FHT0Ic+w== rsa-key-20160624"
+  }
+}
+</pre>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/devops/" rel="tag">devops</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/bmcs/" rel="tag">BMCS</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/iaas/" rel="tag">IaaS</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="강지선 avatar" src="http://www.oracloud.kr/img/author/jisun.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">작성자: 강지선</span>
+	</div>
+	<div class="authorbox__description">
+		한국 오라클의 클라우드 세일즈 컨설팅 팀 소속입니다. 클라우드, 가상화, 네트워크, 빅데이터에 관심을 갖고 있습니다. 
+	</div>
+	<div class="authorbox__description">
+		E-mail: oracloud.kr@gmail.com
+	</div>
+</div>
+
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="http://www.oracloud.kr/post/talkit_dbcs/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="http://www.oracloud.kr/post/uploadcli/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">대용량 Dump File Upload</p></a>
+	</div>
+</nav>
+
+	
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://oracloud-kr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="http://www.oracloud.kr/" />
+	</form>
+</div>
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">ToC (목차)</h4>
+	<div class="widget__content">
+	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-bmcs에서-terraform을-사용하기-위한-환경-구성">1. BMCS에서 Terraform을 사용하기 위한 환경 구성</a>
+<ul>
+<li><a href="#terraform-provider-설치">Terraform Provider 설치</a></li>
+<li><a href="#bmcs-관련-설정-api-용-key-생성-및-등록">BMCS 관련 설정 - API 용 key 생성 및 등록</a></li>
+<li><a href="#bmcs-오브젝트에-대한-id-확인">BMCS 오브젝트에 대한 ID 확인</a></li>
+<li><a href="#key-관련-정보-및-ocid-정보를-os에-설정">Key 관련 정보 및 OCID 정보를 OS에 설정</a></li>
+</ul></li>
+<li><a href="#2-bmcs에서-terraform을-사용하여-환경-구성-vcn-생성-및-인스턴스-생성">2. BMCS에서 Terraform을 사용하여 환경 구성 (VCN 생성 및 인스턴스 생성)</a>
+<ul>
+<li><a href="#vcn-생성">VCN 생성</a></li>
+<li><a href="#instance-생성">Instance 생성</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">최신글</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/post/terraform/" title="Terraform에 대한 기본 소개">
+							Terraform에 대한 기본 소개</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/omc/" title="Oracle Management Cloud(OMC) 소개">
+							Oracle Management Cloud(OMC) 소개</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/omc_cloud_mgt/" title="클라우드를 이용한 차세대 인프라 운영관리 방안">
+							클라우드를 이용한 차세대 인프라 운영관리 방안</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/uploadcli/" title="대용량 Dump File Upload">
+							대용량 Dump File Upload</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/bmcs_terraform/" title="Oracle IaaS BMCS 환경에서 자동화 구축">
+							Oracle IaaS BMCS 환경에서 자동화 구축</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/talkit_dbcs/" title="TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기">
+							TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/occs_new_docker_container/" title="OCCS에 Docker 이미지 배포하기">
+							OCCS에 Docker 이미지 배포하기</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/dbcs_demo/" title="Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo">
+							Oracle Database Cloud Service: 인스턴스 ......</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/ravello_demo/" title="Oracle Ravello Cloud Service 데모">
+							Oracle Ravello Cloud Service 데모</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/occs-new-inst/" title="Oracle Container CS 생성 절차">
+							Oracle Container CS 생성 절차</a>
+		  </li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">카테고리</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/cloud">Cloud</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/container">Container</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/docker">Docker</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/iaas">Iaas</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/oracle">Oracle</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/oracle-cloud">Oracle-Cloud</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/oracle-management-cloud">Oracle-Management-Cloud</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/ravello">Ravello</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://www.oracloud.kr/categories/webinar">Webinar</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">테그</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/acc" title="acc">acc (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/automation" title="automation">automation (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/bmcs" title="bmcs">bmcs (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/cloud" title="cloud">cloud (9)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/container" title="container">container (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/dbcs" title="dbcs">dbcs (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/devops" title="devops">devops (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/docker" title="docker">docker (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/iaac" title="iaac">iaac (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/iaas" title="iaas">iaas (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/management" title="management">management (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/monitoring" title="monitoring">monitoring (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/nested-virtualization" title="nested-virtualization">nested-virtualization (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/object-storage" title="object-storage">object-storage (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/occs" title="occs">occs (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/omc" title="omc">omc (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/oracle" title="oracle">oracle (5)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/oracle-cloud" title="oracle-cloud">oracle-cloud (5)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/ravello" title="ravello">ravello (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/ssh" title="ssh">ssh (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/storage" title="storage">storage (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/talkit" title="talkit">talkit (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/tutorial" title="tutorial">tutorial (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/virtualization" title="virtualization">virtualization (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/vm" title="vm">vm (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/webinar" title="webinar">webinar (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/window" title="window">window (1)</a>
+	</div>
+</div>
+
+	<div class="widget-categories widget">
+	<h4 class="widget__title">SNS(Social Network Service)</h4>
+	<div class="widget__content">
+		<a href="https://github.com/oracloud-kr-team" target="_blank" title="github"><img src="/img/icon/github.png" width="50px" height="50px"/></a>
+		<a href="https://www.slideshare.net/ssusercda07e" target="_blank" title="slideshare"><img src="/img/icon/slideshare.png" width="50px" height="50px"/></a>
+		<a href="https://www.youtube.com/channel/UCboJr3TLlqeDqpBURRdb_lg" target="_blank" title="youtube"><img src="/img/icon/youtube.png" width="50px" height="50px"/></a>
+		<a href="mailto:oracloud.kr@gmail.com" title="email"><img src="/img/icon/email.png" width="50px" height="50px"/></a>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">오라클 클라우드 관련 사이트</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="http://cloud.oracle.com/">
+				Oracle Public Cloud 홈페이지</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://developer.oracle.com/">
+				Oracle Developers</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://docs.oracle.com/en/cloud/">
+				오라클 클라우드 문서</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://apexapps.oracle.com/pls/apex/f?p=44785">
+				Oracle Learning Library</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+	
+</aside>
+
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Oracle Public Cloud - 기술블로그. </p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-96765743-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
