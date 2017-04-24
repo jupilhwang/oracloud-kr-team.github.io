@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Automation</title>
+      <link>http://www.oracloud.kr/tags/automation/</link>
+      <pubDate>Fri, 21 Apr 2017 17:15:48 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cloud</title>
       <link>http://www.oracloud.kr/tags/cloud/</link>
       <pubDate>Fri, 21 Apr 2017 15:00:47 +0900</pubDate>
@@ -48,11 +57,29 @@
     </item>
     
     <item>
+      <title>Devops</title>
+      <link>http://www.oracloud.kr/tags/devops/</link>
+      <pubDate>Fri, 21 Apr 2017 17:15:48 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Docker</title>
       <link>http://www.oracloud.kr/tags/docker/</link>
       <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iaac</title>
+      <link>http://www.oracloud.kr/tags/iaac/</link>
+      <pubDate>Fri, 21 Apr 2017 17:15:48 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/tags/iaac/</guid>
       <description></description>
     </item>
     

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.oracloud.kr/post/terraform/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/omc/</loc>
     <lastmod>2017-04-21T15:00:47+09:00</lastmod>
   </url>
@@ -129,6 +134,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/automation/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/categories/</loc>
     <priority>0</priority>
   </url>
@@ -164,6 +175,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/devops/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/docker/</loc>
     <lastmod>2017-04-12T19:34:26+09:00</lastmod>
     <priority>0</priority>
@@ -182,6 +199,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/iaac/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/iaas/</loc>
     <lastmod>2017-03-10T22:42:46+09:00</lastmod>
     <priority>0</priority>
@@ -189,7 +212,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/categories/iaas/</loc>
-    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -249,13 +272,13 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-04-21T15:00:47+09:00</lastmod>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.oracloud.kr/post/</loc>
-    <lastmod>2017-04-21T15:00:47+09:00</lastmod>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
