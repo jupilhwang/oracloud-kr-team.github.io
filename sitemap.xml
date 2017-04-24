@@ -225,12 +225,6 @@
   </url>
   
   <url>
-    <loc>http://www.oracloud.kr/tags/iaac/</loc>
-    <lastmod>2017-04-01T17:15:48+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://www.oracloud.kr/tags/iaas/</loc>
     <lastmod>2017-04-21T17:15:48+09:00</lastmod>
     <priority>0</priority>
@@ -239,6 +233,12 @@
   <url>
     <loc>http://www.oracloud.kr/categories/iaas/</loc>
     <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/iac/</loc>
+    <lastmod>2017-04-01T17:15:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
