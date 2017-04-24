@@ -6,15 +6,15 @@
     <description>Recent content in Container on Oracle Public Cloud - 기술블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 12 Apr 2017 19:34:26 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 24 Apr 2017 19:34:26 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/categories/container/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>OCCS에 Docker 이미지 배포하기</title>
+      <title>OCCS에 Docker 이미지 배포</title>
       <link>http://www.oracloud.kr/post/occs_new_docker_container/</link>
-      <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
+      <pubDate>Mon, 24 Apr 2017 19:34:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/occs_new_docker_container/</guid>
       <description>Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공하는 Docker 서비스입니다. OCCS에는 Kubernetes(k8s), docker-swarm 그리고 marathon 과 유사한 container orchestration 도구가 포함되어 있습니다.
@@ -23,9 +23,9 @@ OCCS 용어 정리    Container CS 용어 설명     Service OCCS를 사용하�
     </item>
     
     <item>
-      <title>Oracle Container CS 생성 절차</title>
+      <title>Oracle Container CS 인스턴스 생성</title>
       <link>http://www.oracloud.kr/post/occs-new-inst/</link>
-      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
+      <pubDate>Thu, 20 Apr 2017 19:36:38 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/occs-new-inst/</guid>
       <description>Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에 StackEngine을 인수하였습니다. (관련 공지). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 kubernetes(k8s), docker-swarm 그리고 marathon과 같은 container orchestration 도구입니다.
@@ -36,7 +36,7 @@ Oracle Container Clod Service를 통해서 Docker 컨테이너의 클러스터 �
     <item>
       <title>오라클 클라우드의 Docker 컨테이너 지원 유형</title>
       <link>http://www.oracloud.kr/post/docker_in_oc/</link>
-      <pubDate>Mon, 20 Mar 2017 19:01:16 +0900</pubDate>
+      <pubDate>Wed, 19 Apr 2017 19:01:16 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/docker_in_oc/</guid>
       <description>오라클 클라우드에서 docker를 운영하는 방식은 3가지 입니다. 첫 번째는 Oracle cloud의 가상머신에 Docker와 Orchestration tool(Kubernetes, docker-swarm, marathon)을 직접 설치하고 사용하는 것입니다. 두 번째는 Oracle Cloud가 IaaS 형태로 제공하는 Oracle Container Cloud Service (이하 OCCS)를 사용하는 것입니다. 세 번째는 Oracle Cloud가 PaaS 형태로 제공하는 Oracle Application Container Cloud(이하 Oracle ACC)를 사용하는 것입니다.

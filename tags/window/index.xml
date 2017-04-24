@@ -6,7 +6,7 @@
     <description>Recent content in Window on Oracle Public Cloud - 기술블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 10 Mar 2017 22:42:46 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Mar 2017 22:42:46 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/tags/window/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>오라클 클라우드에서 window VM 인스턴스 생성</title>
       <link>http://www.oracloud.kr/post/win-vm/</link>
-      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      <pubDate>Fri, 31 Mar 2017 22:42:46 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/win-vm/</guid>
       <description>오라클 클라우드(Oracle Public Cloud, OPC)의 Compute 서비스에서 Window VM 인스턴스를 생성하는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud 계정이 필요합니다. 현재 OPC 계정이 없다면 &amp;ldquo;오라클 클라우드 계정 생성하기&amp;rdquo;를 먼저 확인하시기 바랍니다.

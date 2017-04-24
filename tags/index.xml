@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Oracle Public Cloud - 기술블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 20 Mar 2017 19:01:16 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 19 Apr 2017 19:01:16 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Acc</title>
       <link>http://www.oracloud.kr/tags/acc/</link>
-      <pubDate>Mon, 20 Mar 2017 19:01:16 +0900</pubDate>
+      <pubDate>Wed, 19 Apr 2017 19:01:16 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/acc/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Automation</title>
       <link>http://www.oracloud.kr/tags/automation/</link>
-      <pubDate>Fri, 21 Apr 2017 17:15:48 +0900</pubDate>
+      <pubDate>Sat, 01 Apr 2017 17:15:48 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/automation/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>Bmcs</title>
       <link>http://www.oracloud.kr/tags/bmcs/</link>
-      <pubDate>Mon, 17 Apr 2017 17:15:48 +0900</pubDate>
+      <pubDate>Fri, 21 Apr 2017 17:15:48 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/bmcs/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>Cloud</title>
       <link>http://www.oracloud.kr/tags/cloud/</link>
-      <pubDate>Fri, 21 Apr 2017 15:00:47 +0900</pubDate>
+      <pubDate>Mon, 24 Apr 2017 19:34:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/cloud/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>Container</title>
       <link>http://www.oracloud.kr/tags/container/</link>
-      <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
+      <pubDate>Mon, 24 Apr 2017 19:34:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/container/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>Dbcs</title>
       <link>http://www.oracloud.kr/tags/dbcs/</link>
-      <pubDate>Sun, 16 Apr 2017 20:44:25 +0900</pubDate>
+      <pubDate>Wed, 29 Mar 2017 20:44:25 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/dbcs/</guid>
       <description></description>
@@ -77,7 +77,7 @@
     <item>
       <title>Docker</title>
       <link>http://www.oracloud.kr/tags/docker/</link>
-      <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
+      <pubDate>Mon, 24 Apr 2017 19:34:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/docker/</guid>
       <description></description>
@@ -86,7 +86,7 @@
     <item>
       <title>Iaac</title>
       <link>http://www.oracloud.kr/tags/iaac/</link>
-      <pubDate>Fri, 21 Apr 2017 17:15:48 +0900</pubDate>
+      <pubDate>Sat, 01 Apr 2017 17:15:48 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/iaac/</guid>
       <description></description>
@@ -104,7 +104,7 @@
     <item>
       <title>Management</title>
       <link>http://www.oracloud.kr/tags/management/</link>
-      <pubDate>Fri, 21 Apr 2017 10:31:26 +0900</pubDate>
+      <pubDate>Sun, 23 Apr 2017 10:31:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/management/</guid>
       <description></description>
@@ -122,7 +122,7 @@
     <item>
       <title>Nested Virtualization</title>
       <link>http://www.oracloud.kr/tags/nested-virtualization/</link>
-      <pubDate>Fri, 07 Apr 2017 16:05:59 +0900</pubDate>
+      <pubDate>Sat, 15 Apr 2017 16:05:59 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/nested-virtualization/</guid>
       <description></description>
@@ -131,7 +131,7 @@
     <item>
       <title>Object Storage</title>
       <link>http://www.oracloud.kr/tags/object-storage/</link>
-      <pubDate>Tue, 07 Mar 2017 08:54:32 +0900</pubDate>
+      <pubDate>Mon, 06 Mar 2017 08:54:32 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/object-storage/</guid>
       <description></description>
@@ -140,7 +140,7 @@
     <item>
       <title>Occs</title>
       <link>http://www.oracloud.kr/tags/occs/</link>
-      <pubDate>Mon, 20 Mar 2017 19:01:16 +0900</pubDate>
+      <pubDate>Wed, 19 Apr 2017 19:01:16 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/occs/</guid>
       <description></description>
@@ -149,7 +149,7 @@
     <item>
       <title>Omc</title>
       <link>http://www.oracloud.kr/tags/omc/</link>
-      <pubDate>Fri, 21 Apr 2017 15:00:47 +0900</pubDate>
+      <pubDate>Sun, 23 Apr 2017 10:31:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/omc/</guid>
       <description></description>
@@ -176,7 +176,7 @@
     <item>
       <title>Ravello</title>
       <link>http://www.oracloud.kr/tags/ravello/</link>
-      <pubDate>Fri, 07 Apr 2017 16:05:59 +0900</pubDate>
+      <pubDate>Sat, 15 Apr 2017 16:05:59 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/ravello/</guid>
       <description></description>
@@ -185,7 +185,7 @@
     <item>
       <title>Ssh</title>
       <link>http://www.oracloud.kr/tags/ssh/</link>
-      <pubDate>Mon, 06 Mar 2017 12:07:16 +0900</pubDate>
+      <pubDate>Sun, 05 Mar 2017 12:07:16 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/ssh/</guid>
       <description></description>
@@ -194,7 +194,7 @@
     <item>
       <title>Storage</title>
       <link>http://www.oracloud.kr/tags/storage/</link>
-      <pubDate>Tue, 07 Mar 2017 08:54:32 +0900</pubDate>
+      <pubDate>Mon, 06 Mar 2017 08:54:32 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/storage/</guid>
       <description></description>
@@ -203,7 +203,7 @@
     <item>
       <title>Talkit</title>
       <link>http://www.oracloud.kr/tags/talkit/</link>
-      <pubDate>Sun, 16 Apr 2017 20:44:25 +0900</pubDate>
+      <pubDate>Wed, 29 Mar 2017 20:44:25 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/talkit/</guid>
       <description></description>
@@ -212,7 +212,7 @@
     <item>
       <title>Tutorial</title>
       <link>http://www.oracloud.kr/tags/tutorial/</link>
-      <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
+      <pubDate>Mon, 24 Apr 2017 19:34:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/tutorial/</guid>
       <description></description>
@@ -221,7 +221,7 @@
     <item>
       <title>Virtualization</title>
       <link>http://www.oracloud.kr/tags/virtualization/</link>
-      <pubDate>Sat, 25 Mar 2017 11:23:39 +0900</pubDate>
+      <pubDate>Fri, 31 Mar 2017 22:42:46 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/virtualization/</guid>
       <description></description>
@@ -239,7 +239,7 @@
     <item>
       <title>Webinar</title>
       <link>http://www.oracloud.kr/tags/webinar/</link>
-      <pubDate>Sun, 16 Apr 2017 20:44:25 +0900</pubDate>
+      <pubDate>Wed, 29 Mar 2017 20:44:25 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/webinar/</guid>
       <description></description>
@@ -248,7 +248,7 @@
     <item>
       <title>Window</title>
       <link>http://www.oracloud.kr/tags/window/</link>
-      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      <pubDate>Fri, 31 Mar 2017 22:42:46 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/window/</guid>
       <description></description>

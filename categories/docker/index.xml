@@ -6,15 +6,15 @@
     <description>Recent content in Docker on Oracle Public Cloud - 기술블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 12 Apr 2017 19:34:26 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 24 Apr 2017 19:34:26 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>OCCS에 Docker 이미지 배포하기</title>
+      <title>OCCS에 Docker 이미지 배포</title>
       <link>http://www.oracloud.kr/post/occs_new_docker_container/</link>
-      <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
+      <pubDate>Mon, 24 Apr 2017 19:34:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/occs_new_docker_container/</guid>
       <description>Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공하는 Docker 서비스입니다. OCCS에는 Kubernetes(k8s), docker-swarm 그리고 marathon 과 유사한 container orchestration 도구가 포함되어 있습니다.

@@ -6,7 +6,7 @@
     <description>Recent content in Ravello on Oracle Public Cloud - 기술블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 07 Apr 2017 16:05:59 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 15 Apr 2017 16:05:59 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/categories/ravello/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Oracle Ravello Cloud Service 데모</title>
       <link>http://www.oracloud.kr/post/ravello_demo/</link>
-      <pubDate>Fri, 07 Apr 2017 16:05:59 +0900</pubDate>
+      <pubDate>Sat, 15 Apr 2017 16:05:59 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/ravello_demo/</guid>
       <description>Oracle Ravello Cloud Service(이하 Oracle Ravello)는 VMware (또는 KVM) 기반의 VM 애플리케이션 환경을, 기존 환경 그대로 변경 없이 손쉽게 클라우드 환경으로 옮겨서 사용한만큼만 지불하는 서비스입니다.

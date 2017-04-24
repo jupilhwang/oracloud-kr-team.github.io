@@ -23,20 +23,9 @@ OMC의 구성요소  Application Performance Monitoring  어플리케이션단�
     </item>
     
     <item>
-      <title>Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo</title>
-      <link>http://www.oracloud.kr/post/dbcs_demo/</link>
-      <pubDate>Wed, 12 Apr 2017 13:20:12 +0900</pubDate>
-      
-      <guid>http://www.oracloud.kr/post/dbcs_demo/</guid>
-      <description>Oracle DBMS 소개 Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 PaaS 형태로 제공하는 오라클 데이터베이스 서비스입니다.
-Oracle Database Cloud Service에는 다음과 같이 4 가지 유형의 패키지로 라이센스가 구분됩니다.
- Standard Edition Enterprise Edition  TDE (transparent Data Encryption) Data Guard  Enterprise Edition High Performance  Multitenant Partitioning Advanced Compression Advanced Security Database Vault  Enterprise Edition Extreme Performance  Oracle RAC 지원 In-memory Active Data Guard   2017년 04월 현재 Oracle Database CS의 지원 버전은 다음과 같습니다.</description>
-    </item>
-    
-    <item>
-      <title>Oracle Container CS 생성 절차</title>
+      <title>Oracle Container CS 인스턴스 생성</title>
       <link>http://www.oracloud.kr/post/occs-new-inst/</link>
-      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
+      <pubDate>Thu, 20 Apr 2017 19:36:38 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/occs-new-inst/</guid>
       <description>Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에 StackEngine을 인수하였습니다. (관련 공지). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 kubernetes(k8s), docker-swarm 그리고 marathon과 같은 container orchestration 도구입니다.
@@ -53,6 +42,17 @@ Oracle Container Clod Service를 통해서 Docker 컨테이너의 클러스터 �
       <description>오라클은 2015년에 Stack Engine이라는 Docker 전문 업체를 인수하였고, 이 업체의 솔루션을 클라우드 서비스 형태로 제공하고 있습니다. 이 서비스가 Oracle Container Cloud Service입니다.
 OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소개하는 슬라이드를 공유합니다.
  작성일: 2017-02-07   </description>
+    </item>
+    
+    <item>
+      <title>Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo</title>
+      <link>http://www.oracloud.kr/post/dbcs_demo/</link>
+      <pubDate>Tue, 07 Mar 2017 13:20:12 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/dbcs_demo/</guid>
+      <description>Oracle DBMS 소개 Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 PaaS 형태로 제공하는 오라클 데이터베이스 서비스입니다.
+Oracle Database Cloud Service에는 다음과 같이 4 가지 유형의 패키지로 라이센스가 구분됩니다.
+ Standard Edition Enterprise Edition  TDE (transparent Data Encryption) Data Guard  Enterprise Edition High Performance  Multitenant Partitioning Advanced Compression Advanced Security Database Vault  Enterprise Edition Extreme Performance  Oracle RAC 지원 In-memory Active Data Guard   2017년 04월 현재 Oracle Database CS의 지원 버전은 다음과 같습니다.</description>
     </item>
     
     <item>

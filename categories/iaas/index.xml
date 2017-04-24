@@ -12,17 +12,20 @@
     
     
     <item>
-      <title>Terraform에 대한 기본 소개</title>
-      <link>http://www.oracloud.kr/post/terraform/</link>
+      <title>Oracle BMCS에서 Terraform을 이용한 관리 자동화 구축</title>
+      <link>http://www.oracloud.kr/post/bmcs_terraform/</link>
       <pubDate>Fri, 21 Apr 2017 17:15:48 +0900</pubDate>
       
-      <guid>http://www.oracloud.kr/post/terraform/</guid>
-      <description>Terraform에 대하여.. Terraform은 인프라를 만들고 바꾸고 버전 관리하는 도구입니다. Terraform은 Infrastructure as Code, Execution Plans, Resource Graph, Change Automation 와 같은 기능을 제공합니다.
-이 기능을 이용해서 Infrastructure를 관리할 수 있는데 사용할 수 있는 Infrastructure를 Terraform에서는 Provider라고 부릅니다. Terraform이 지원하는 Provider는 Oracle Baremetal, Oracle Public Cloud, AWS, BitBucket, Chef, CloudFlare, Consul, DigitalOcean, Docker, GitHub, Google Cloud, Grafana, InfluxDB, Heroku, Microsoft Azure, MySQL, PostgreSQL 등 개발에서 보통 사용하는 솔루션은 거의 모두 포함되어 있습니다.</description>
+      <guid>http://www.oracloud.kr/post/bmcs_terraform/</guid>
+      <description>다음은 Oracle IaaS BMCS 환경에서 Terraform을 사용하여 자동화(Infrastructure as Code)하는 방법에 대해서 가이드 하는 문서입니다.
+Terraform에 대한 문서는 이곳를 참고하십시오.
+1. BMCS에서 Terraform을 사용하기 위한 환경 구성 BMCS에서 Terraform 을 사용하기 위해서는 먼저 VM을 생성한 후 해당 VM에 Terraform provider를 설치해야 합니다.
+Terraform Provider 설치 BareMetal 용 Terraform Provider 는 이곳에서 해당 OS버전에 맞추어서 다운로드가 가능합니다. Linux용은 https://github.com/oracle/terraform-provider-baremetal/releases/download/v1.0.3/linux.tar.gz 에서 다운로드 받으실 수 있습니다.
+원하는 위치에 linux.tar.gz을 풀고, Home directory에 다음과 같은 ~/.</description>
     </item>
     
     <item>
-      <title>대용량 Dump File Upload</title>
+      <title>Upload CLI을 이용한 Object Storage 데이터 이관</title>
       <link>http://www.oracloud.kr/post/uploadcli/</link>
       <pubDate>Wed, 19 Apr 2017 10:45:24 +0900</pubDate>
       
@@ -34,28 +37,35 @@ Oracle Storage Cloud에 Upload하기 위한 Tool인 uploadcli에 대한 설치 �
     </item>
     
     <item>
-      <title>Oracle IaaS BMCS 환경에서 자동화 구축</title>
-      <link>http://www.oracloud.kr/post/bmcs_terraform/</link>
-      <pubDate>Mon, 17 Apr 2017 17:15:48 +0900</pubDate>
-      
-      <guid>http://www.oracloud.kr/post/bmcs_terraform/</guid>
-      <description>다음은 Oracle IaaS BMCS 환경에서 Terraform을 사용하여 자동화(Infrastructure as Code)하는 방법에 대해서 가이드 하는 문서입니다.
-Terraform에 대한 문서는 이곳를 참고하십시오.
-1. BMCS에서 Terraform을 사용하기 위한 환경 구성 BMCS에서 Terraform 을 사용하기 위해서는 먼저 VM을 생성한 후 해당 VM에 Terraform provider를 설치해야 합니다.
-Terraform Provider 설치 BareMetal 용 Terraform Provider 는 이곳에서 해당 OS버전에 맞추어서 다운로드가 가능합니다. Linux용은 https://github.com/oracle/terraform-provider-baremetal/releases/download/v1.0.3/linux.tar.gz 에서 다운로드 받으실 수 있습니다.
-원하는 위치에 linux.tar.gz을 풀고, Home directory에 다음과 같은 ~/.</description>
-    </item>
-    
-    <item>
       <title>Oracle Ravello Cloud Service 데모</title>
       <link>http://www.oracloud.kr/post/ravello_demo/</link>
-      <pubDate>Fri, 07 Apr 2017 16:05:59 +0900</pubDate>
+      <pubDate>Sat, 15 Apr 2017 16:05:59 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/ravello_demo/</guid>
       <description>Oracle Ravello Cloud Service(이하 Oracle Ravello)는 VMware (또는 KVM) 기반의 VM 애플리케이션 환경을, 기존 환경 그대로 변경 없이 손쉽게 클라우드 환경으로 옮겨서 사용한만큼만 지불하는 서비스입니다.
 Oracle Ravello 의 Trial 계정을 생성하고 VM을 upload하여 실제로 Ravello 상에서 VM을 publish 해보는 데모입니다.
 데모 슬라이드는 다음과 같은 내용으로 구성되어 있습니다.
  Step 0: Demo 계정 신청하기 Step 1: VM 가져오기 Step 2: 어플리케이션 만들기 Step 3: 네트워크 서비스 점검 Step 4: 어플리케이션 배포    Oracle Ravello Cick Through Demo  from 오라클 클라우드</description>
+    </item>
+    
+    <item>
+      <title>Provisioning 툴: Terraform</title>
+      <link>http://www.oracloud.kr/post/terraform/</link>
+      <pubDate>Sat, 01 Apr 2017 17:15:48 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/terraform/</guid>
+      <description>Terraform이 란? Terraform은 인프라를 만들고 바꾸고 버전 관리하는 도구입니다. Terraform은 Infrastructure as Code, Execution Plans, Resource Graph, Change Automation 와 같은 기능을 제공합니다.
+이 기능을 이용해서 Infrastructure를 관리할 수 있는데 사용할 수 있는 Infrastructure를 Terraform에서는 Provider라고 부릅니다. Terraform이 지원하는 Provider는 Oracle Baremetal, Oracle Public Cloud, AWS, BitBucket, Chef, CloudFlare, Consul, DigitalOcean, Docker, GitHub, Google Cloud, Grafana, InfluxDB, Heroku, Microsoft Azure, MySQL, PostgreSQL 등 개발에서 보통 사용하는 솔루션은 거의 모두 포함되어 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>오라클 클라우드에서 window VM 인스턴스 생성</title>
+      <link>http://www.oracloud.kr/post/win-vm/</link>
+      <pubDate>Fri, 31 Mar 2017 22:42:46 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/win-vm/</guid>
+      <description>오라클 클라우드(Oracle Public Cloud, OPC)의 Compute 서비스에서 Window VM 인스턴스를 생성하는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud 계정이 필요합니다. 현재 OPC 계정이 없다면 &amp;ldquo;오라클 클라우드 계정 생성하기&amp;rdquo;를 먼저 확인하시기 바랍니다.
+Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 작성되었습니다. 이 문서의 실습에 있어서 윈도우와 &amp;ldquo;OS X&amp;rdquo;의 차이는 거의 없습니다. Window VM을 생성한 후, RDP로 Window VM에 접속하는 부분만 차이가 있습니다. 이 부분은 Window와 &amp;ldquo;OS X&amp;rdquo;를 구분하여 작성했습니다.</description>
     </item>
     
     <item>
@@ -68,16 +78,6 @@ Oracle Ravello 의 Trial 계정을 생성하고 VM을 upload하여 실제로 Rav
 Oracle Ravello Cloud Service 는 Public Cloud Service 입니다. VMware (또는 KVM) 기반의 VM 애플리케이션 환경을, 기존 환경 그대로 변경 없이 손쉽게 클라우드 환경으로 옮겨서 사용한만큼만 지불하는 서비스입니다.
 Oracle Ravello Cloud Service에 대한 개요와 설명을 담은 슬라이드를 아래 공유합니다.
   Oracle Ravello Overview  from 오라클 클라우드</description>
-    </item>
-    
-    <item>
-      <title>오라클 클라우드에서 window VM 인스턴스 생성</title>
-      <link>http://www.oracloud.kr/post/win-vm/</link>
-      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
-      
-      <guid>http://www.oracloud.kr/post/win-vm/</guid>
-      <description>오라클 클라우드(Oracle Public Cloud, OPC)의 Compute 서비스에서 Window VM 인스턴스를 생성하는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud 계정이 필요합니다. 현재 OPC 계정이 없다면 &amp;ldquo;오라클 클라우드 계정 생성하기&amp;rdquo;를 먼저 확인하시기 바랍니다.
-Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 작성되었습니다. 이 문서의 실습에 있어서 윈도우와 &amp;ldquo;OS X&amp;rdquo;의 차이는 거의 없습니다. Window VM을 생성한 후, RDP로 Window VM에 접속하는 부분만 차이가 있습니다. 이 부분은 Window와 &amp;ldquo;OS X&amp;rdquo;를 구분하여 작성했습니다.</description>
     </item>
     
     <item>
