@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.oracloud.kr/oraclooud/</loc>
+    <lastmod>2017-04-24T11:00:57+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/terraform/</loc>
     <lastmod>2017-04-21T17:15:48+09:00</lastmod>
   </url>
@@ -272,7 +277,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <lastmod>2017-04-24T11:00:57+09:00</lastmod>
     <priority>0</priority>
   </url>
   
