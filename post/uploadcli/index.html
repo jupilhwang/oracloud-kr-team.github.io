@@ -41,6 +41,7 @@ Oracle Storage Cloud에 Upload하기 위한 Tool인 uploadcli에 대한 설치 �
 <link rel="stylesheet" href="http://www.oracloud.kr/css/minsu.css" type="text/css" media="all" />
 <script type="text/javascript" src="http://www.oracloud.kr/js/scripts.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="/img/icon/oracle.png" />
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=bsh&amp;skin=sons-of-obsidian"></script>
 
 
 
@@ -102,9 +103,9 @@ Oracle Storage Cloud에 Upload하기 위한 Tool인 uploadcli에 대한 설치 �
 <li>OTN을 통해 uploadcli를 <a href="http://www.oracle.com/technetwork/topics/cloud/downloads/index.html#cli">download</a>합니다.</li>
 </ul>
 
-<h1 id="uploadcli">uploadcli</h1>
+<h2 id="uploadcli">uploadcli</h2>
 
-<h2 id="기본-명령어">기본 명령어</h2>
+<h3 id="기본-명령어">기본 명령어</h3>
 
 <ul>
 <li>java -jar uploadcli.jar -url <strong><em>REST_Endpoint_URL</em></strong> -user <strong><em>userName</em></strong> -container <strong><em>containerName file-or-files-or-directory</em></strong></li>
@@ -115,7 +116,7 @@ Oracle Storage Cloud에 Upload하기 위한 Tool인 uploadcli에 대한 설치 �
 </ul></li>
 </ul>
 
-<h2 id="uploadcli에서-제공되는-parameter">uploadcli에서 제공되는 parameter</h2>
+<h3 id="uploadcli에서-제공되는-parameter">uploadcli에서 제공되는 parameter</h3>
 
 <table>
 <caption><b>uploadcli parameter</b></caption>
@@ -221,34 +222,49 @@ This MUST be the last parameter that you specify.</td>
 
 <h2 id="uploadcli-테스트">uploadcli 테스트</h2>
 
-<h3 id="dbcs-instance에서-storage-cloud의-upload-file-download">DBCS Instance에서 Storage Cloud의 upload file download</h3>
+<h3 id="dbcs-instance에서-storage-cloud의-파일-내려받기">DBCS Instance에서 Storage Cloud의 파일 내려받기</h3>
 
 <p>DBCS Instance에서 &ldquo;curl&rdquo;을 이용하여 Storage Cloud에 upload된 dump file을 download합니다.</p>
 
 <ul>
-<li>Storage Cloud Authentication얻어오기<br>
-curl -v -X GET -H &ldquo;X-Storage-User: Storage-a425375:jaeyeop.lee@oracle.com&rdquo; -H &ldquo;X-Storage-Pass: H******@&rdquo; <br />
- <a href="https://a425375.storage.oraclecloud.com/auth/v1.0">https://a425375.storage.oraclecloud.com/auth/v1.0</a></li>
+<li>Storage Cloud Authentication얻어오기</li>
 </ul>
 
-<p>&lt; HTTP/1.1 200 OK<br>
-&lt; date: 1481594593964<br>
-<b style="color: rgb(255,0,0)">&lt; X-Auth-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa</b><br>
-&lt; X-Storage-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa<br>
-…..</p>
+<pre class="prettyprint linenums">
+curl -v -X GET -H "X-Storage-User: Storage-a425375:jaeyeop.lee@oracle.com" -H "X-Storage-Pass: H******@" \
+     https://a425375.storage.oraclecloud.com/auth/v1.0
+
+HTTP/1.1 200 OK
+date: 1481594593964
+X-Auth-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa
+X-Storage-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa
+....
+
+</pre>
 
 <ul>
-<li>Response 중 “X-Auth-Token”을 이용하여 Storage Cloud에 upload된 dump file을 download<br>
-curl -v -X GET -H <b style="color: rgb(255,0,0)">&ldquo;X-Auth-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa&rdquo;</b>  -o oscsa-OnPrem-16.3.1.0.13.tar.gz <br />
- <a href="https://a425375.storage.oraclecloud.com/v1/Storage-a425375/myContainer/oscsa-OnPrem-16.3.1.0.13.tar.gz">https://a425375.storage.oraclecloud.com/v1/Storage-a425375/myContainer/oscsa-OnPrem-16.3.1.0.13.tar.gz</a></li>
+<li>Response 중 6라인의 <strong><em>X-Auth-Token</em></strong> 키를 인증키로하여 다음 REST API를 호출하여 Storage Cloud에 upload된 dump file 내려받습니다.</li>
 </ul>
 
-<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-03.jpg" alt="" /></p>
+<pre class="prettyprint linenums">
+curl -v -X GET -H "X-Auth-Token:AUTH_tkf0e7a4ca4a704013a47b70a385373bfa" \
+     -o oscsa-OnPrem-16.3.1.0.13.tar.gz \
+     https://a425375.storage.oraclecloud.com/v1/Storage-a425375/myContainer/oscsa-OnPrem-16.3.1.0.13.tar.gz
+</pre>
 
-<h3 id="최종-테스트-결과">최종 테스트 결과</h3>
+<p>위 curl 명령을 보면 1라인에 X-Auth-Token에 위에서 확보한 인증 키를 추가한 것을 확인할 수 있습니다.</p>
 
-<p>uploadcli를 통해 571MB의 File을 upload한 테스트 결과입니다. 기존 53분이 걸리던 작업을 4분 41초에 처리할 수 있습니다.
-<img src="https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-04.jpg" alt="" /></p>
+<ul>
+<li>그림 1. DBCS 인스턴스에서 Object Storage에 파일 내려받기.
+<img src="https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-03.jpg" alt="" /></li>
+</ul>
+
+<p>uploadcli를 통해 571MB의 File을 upload한 테스트 결과입니다. 기존 53분이 걸리던 작업을 4분 41초에 처리할 수 있습니다.</p>
+
+<ul>
+<li>그림 2. uploadcli에서 segmentation을 변경한 테스트 결과
+<img src="https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-04.jpg" alt="" /></li>
+</ul>
 
 		</div>
 		
@@ -319,14 +335,16 @@ s.setAttribute('data-timestamp', +new Date());
 	<div class="widget__content">
 	<nav id="TableOfContents">
 <ul>
+<li>
+<ul>
 <li><a href="#uploadcli">uploadcli</a>
 <ul>
 <li><a href="#기본-명령어">기본 명령어</a></li>
 <li><a href="#uploadcli에서-제공되는-parameter">uploadcli에서 제공되는 parameter</a></li>
+</ul></li>
 <li><a href="#uploadcli-테스트">uploadcli 테스트</a>
 <ul>
-<li><a href="#dbcs-instance에서-storage-cloud의-upload-file-download">DBCS Instance에서 Storage Cloud의 upload file download</a></li>
-<li><a href="#최종-테스트-결과">최종 테스트 결과</a></li>
+<li><a href="#dbcs-instance에서-storage-cloud의-파일-내려받기">DBCS Instance에서 Storage Cloud의 파일 내려받기</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -411,6 +429,7 @@ s.setAttribute('data-timestamp', +new Date());
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/dbcs" title="dbcs">dbcs (2)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/devops" title="devops">devops (1)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/docker" title="docker">docker (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/iaac" title="iaac">iaac (1)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/iaas" title="iaas">iaas (3)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/monitoring" title="monitoring">monitoring (1)</a>
 		<a class="widget__link widget__link--taglist" href="http://www.oracloud.kr/tags/nested-virtualization" title="nested-virtualization">nested-virtualization (2)</a>
