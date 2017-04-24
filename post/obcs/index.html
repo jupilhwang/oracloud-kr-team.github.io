@@ -38,6 +38,7 @@
 <link rel="stylesheet" href="http://www.oracloud.kr/css/minsu.css" type="text/css" media="all" />
 <script type="text/javascript" src="http://www.oracloud.kr/js/scripts.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="/img/icon/oracle.png" />
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=bsh&amp;skin=sons-of-obsidian"></script>
 
 
 
@@ -60,7 +61,7 @@
 		<li class="menu__item "><a class="menu__link" href="/opc-iaas/" title="IaaS 서비스 관련 문서를 정리하는 페이지입니다." >IAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-paas/" title="PaaS 서비스 관련 문서를 정리하는 페이지입니다." >PAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-terminology/" title="오라클 클라우드에서 각 서비스에서 사용하는 용어의 정의를 정리합니다." >OPC 용어사전</a></li>
-		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="채팅룸으로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
+		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
 	</ul>
 </nav>
 
@@ -144,7 +145,7 @@
 <li><p>Terminal Window를 열어 opc_installer.jar 파일로 backup module을 설치합니다.</p></li>
 
 <li><p>다운로드 받은 디렉토리로 이동하여 압축을 풀고 아래의 설치 명령어를 통하여 모듈을 설치합니다. 변수값에 오라클 퍼블릭 클라우드 계정정보를 입력하여 주면 됩니다.<br />
-<pre class="backup module">
+<pre class="prettyprint">
 <em>java -jar opc_install.jar -serviceName <strong>myService</strong>
 -identityDomain <strong>myDomain</strong> -opcId <strong>&lsquo;myAccount@myCompany.com&rsquo;</strong>
 -opcPass <strong>&lsquo;myPassword&rsquo;</strong> -walletDir /</strong>walletDirectory
@@ -152,19 +153,19 @@
 </pre></p></li>
 </ol>
 
-<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/odbcs/db1.png" alt="" />
-<br /></p>
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/odbcs/db1.png" alt="" /></p>
 
 <h3 id="rman-설정하기">RMAN 설정하기</h3>
 
 <hr />
 
-<p>Backup Module 설치가 완료되면 backup destination에 필요한 Recovery Manager(RMAN)을 설정합니다.<br />
-RMAN backup, restore, maintenance에 필요한 설정은 CONFIGURE 명령어를 사용합니다.</p>
+<p>Backup Module 설치가 완료되면 backup destination에 필요한 Recovery Manager(RMAN)을 설정합니다.</p>
+
+<p>RMAN backup, restore, maintenance에 필요한 설정은 CONFIGURE 명령어를 사용합니다.</p>
 
 <p>SBT PARMS 파라미터는 (ex. SBT_PARMS=(OPC_FILE=/u01…) 기존의 PFILE이나 SPFILE에서 설정할 수 있는 값이 아니라 backup 모듈 설치 도중 생성되는 OPC_PFILE에 저장되는 파라미터입니다. 또한 OPC_FILE은 $ORACLE_HOME/dbs 디렉토리에 저장되어 있습니다. 해당 파라미터의 경로를 모를 경우, find 명령어로 검색합니다. (ex. find / -name opcorcl.ora)</p>
 
-<pre class="RMAN conf">
+<pre class="prettyprint">
 RMAN> CONFIGURE CHANNEL DEVICE TYPE 'SBT_TAPE' PARMS  'SBT_LIBRARY=/home/oracle/OPC/lib/ libopc.so, ENV=(OPC_PFILE=/u01/products/db/12.1/dbs/opcodbs.ora)';
 </pre>
 
@@ -184,13 +185,13 @@ RMAN> CONFIGURE CHANNEL DEVICE TYPE 'SBT_TAPE' PARMS  'SBT_LIBRARY=/home/oracle/
 
 <p>이번 데모에서는 password encryption으로 암호화를 진행합니다. 백업을 수행하기 전, 아래의 명령어로 password encryption을 설정합니다.</p>
 
-<pre class="RMAN conf">
+<pre class="prettyprint">
 RMAN> set encryption on identified by 'abc123' only;
 </pre>
 
 <p>Encryption 설정 후 아래의 명령어로 백업을 진행합니다. 정상적으로 백업이 시작되면 data file 백업 후 Control file과 SPFILE은 가장 마지막 부분에서 백업됩니다.</p>
 
-<pre class="RMAN conf">
+<pre class="prettyprint">
 RMAN> backup device type sbt as compressed backupset database plus archivelog format '%d_%U';
 </pre>
 
@@ -204,16 +205,17 @@ RMAN> backup device type sbt as compressed backupset database plus archivelog fo
 
 <hr />
 
-<p>아래의 명령어로 backup file을 확인할 수 있습니다.
-<pre class="RMAN conf">
-RMAN&gt; list backup;
-</pre></p>
+<p>아래의 명령어로 backup file을 확인할 수 있습니다.</p>
+
+<pre class="prettyprint">
+RMAN> list backup;
+</pre>
 
 <p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/odbcs/db6.png" alt="" /></p>
 
 <p>또한 백업된 시간을 자세히 알고 싶을 경우 아래의 OS 명령어를 입력하고 다시 RMAN에 접속하여 ‘list backup summary’ 명령어를 통해 확인합니다.</p>
 
-<pre class="RMAN conf">
+<pre class="prettyprint">
 [oracle@localhost~] export NLS_DATE_FORMAT='yyyy-mm-dd hh24:mi:ss'
 [oracle@localhost~] rman target /
 
@@ -243,8 +245,7 @@ RMAN&gt; list backup;
 
 <p>정상적으로 복구가 완료되었다면 아래와 같이 데이터베이스 파일이 정상적으로 보이며, 데이터베이스가 재기동 됩니다.</p>
 
-<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/odbcs/db12.png" alt="" />
-<br /></p>
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/odbcs/db12.png" alt="" /></p>
 
 <h2 id="마치며">마치며</h2>
 
