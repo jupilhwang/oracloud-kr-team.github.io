@@ -49,7 +49,7 @@ Oracle Ravello 의 Trial 계정을 생성하고 VM을 upload하여 실제로 Rav
     </item>
     
     <item>
-      <title>Provisioning 툴: Terraform</title>
+      <title>IaaS Provisioning 툴: Terraform</title>
       <link>http://www.oracloud.kr/post/terraform/</link>
       <pubDate>Sat, 01 Apr 2017 17:15:48 +0900</pubDate>
       

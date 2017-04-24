@@ -152,7 +152,7 @@ OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소
       <pubDate>Wed, 05 Apr 2017 10:31:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/opc-paas/</guid>
-      <description> Oracle Cloud - PaaS Database  Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo: 2017.04.12  </description>
+      <description> Oracle Databas CS  Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo: 2017.04.12 TalkIT: 클라우드에서 오라클 데이터베이스: 2017.03.29  Oracle Management CS  Oracle Management Cloud(OMC) 소개 OMC: 클라우드 기반 차세대 인프라 운영관리:2017.04.23  </description>
     </item>
     
     <item>
@@ -161,7 +161,7 @@ OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소
       <pubDate>Wed, 05 Apr 2017 10:31:21 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/opc-iaas/</guid>
-      <description>Oracle Cloud - IaaS Compute 입문  오라클 클라우드 계정 생성하기: 2017.03.02 오라클 IaaS를 이용한 VM 인스턴스 생성: 2017.03.05 오라클 클라우드에서 window VM 인스턴스 생성: 2017.03.10  Infrastructure as a Code  Terraform에 대한 기본 소개: 2017.04.21  Container CS  Oracle Container Cloud Service 소개와 Docker 개요: 2017.04.05 Oracle Container CS 생성 절차: 2017.04.05 OCCS에 Docker 이미지 배포하기: 2017.04.12  Storage Cloud Service  Oracle Storage Cloud Serivce 활성화: 2017.</description>
+      <description>Oracle Container CS  Oracle Container Cloud Service 소개와 Docker 개요: 2017.04.05 오라클 클라우드의 Docker 컨테이너 지원 유형: 2017.04.19 Oracle Container CS 생성: 2017.04.05 OCCS에 Docker 이미지 배포: 2017.04.12  Oracle Revello CS  Oracle Ravello Cloud Service 소개: 2017.03.15 Ravello를 이용한 모의 해킹 환경 구축: 2017.03.25 Ravello 웨비나 - TalkIT: 가상환경 클라우드 전환: 201.03.09 Oracle Ravello Cloud Service 데모: 2107.04.15  Oracle Storage CS  Oracle Storage Cloud Serivce 활성화: 2017.</description>
     </item>
     
     <item>
@@ -174,7 +174,7 @@ OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소
     </item>
     
     <item>
-      <title>Provisioning 툴: Terraform</title>
+      <title>IaaS Provisioning 툴: Terraform</title>
       <link>http://www.oracloud.kr/post/terraform/</link>
       <pubDate>Sat, 01 Apr 2017 17:15:48 +0900</pubDate>
       
@@ -205,7 +205,7 @@ Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 
     </item>
     
     <item>
-      <title>Ravello를 이용한 모의 해킹 환경 구성하기</title>
+      <title>Ravello를 이용한 모의 해킹 환경 구축</title>
       <link>http://www.oracloud.kr/post/ravello_by_kim_suk/</link>
       <pubDate>Sat, 25 Mar 2017 11:23:39 +0900</pubDate>
       
@@ -229,6 +229,17 @@ Oracle Ravello Cloud Service에 대한 개요와 설명을 담은 슬라이드�
     </item>
     
     <item>
+      <title>Oracle Database CS: 인스턴스 생성 및 접속 Demo</title>
+      <link>http://www.oracloud.kr/post/dbcs_demo/</link>
+      <pubDate>Sun, 12 Mar 2017 13:20:12 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/dbcs_demo/</guid>
+      <description>Oracle DBMS 소개 Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 PaaS 형태로 제공하는 오라클 데이터베이스 서비스입니다.
+Oracle Database Cloud Service에는 다음과 같이 4 가지 유형의 패키지로 라이센스가 구분됩니다.
+ Standard Edition Enterprise Edition  TDE (transparent Data Encryption) Data Guard  Enterprise Edition High Performance  Multitenant Partitioning Advanced Compression Advanced Security Database Vault  Enterprise Edition Extreme Performance  Oracle RAC 지원 In-memory Active Data Guard   2017년 04월 현재 Oracle Database CS의 지원 버전은 다음과 같습니다.</description>
+    </item>
+    
+    <item>
       <title>TalkIT: 가상환경 클라우드 전환 - Ravello</title>
       <link>http://www.oracloud.kr/post/talkit_ravello/</link>
       <pubDate>Thu, 09 Mar 2017 12:35:37 +0900</pubDate>
@@ -237,17 +248,6 @@ Oracle Ravello Cloud Service에 대한 개요와 설명을 담은 슬라이드�
       <description>2017년 2월 24일에 라벨로를 주제로 진행한 TalkIT 웨비나 동영상입니다.
  주제: 가상화 환경을 손쉽게 클라우드로 전환하기 진행: 고우성 PD 패널:  강우진 전무(한국오라클) 김석 대표이사(노브레이크) 이명재 부장(㈜제이씨원)  일시: 2017-02-24 오후 2시 ~ 오후 3시 30분  Ravell의 개요, 동작 방식 및 현장 적용 사례를 확인하실 수 있습니다.
 1부. 라벨로, 무엇에 쓰는 물건인고! (18:18)   2부. 라벨로, 전문가가 뜯어보기! (24:20)   3부. 라벨로, 고객이 직접 얘기하기! (15:09)   4부.</description>
-    </item>
-    
-    <item>
-      <title>Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo</title>
-      <link>http://www.oracloud.kr/post/dbcs_demo/</link>
-      <pubDate>Tue, 07 Mar 2017 13:20:12 +0900</pubDate>
-      
-      <guid>http://www.oracloud.kr/post/dbcs_demo/</guid>
-      <description>Oracle DBMS 소개 Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 PaaS 형태로 제공하는 오라클 데이터베이스 서비스입니다.
-Oracle Database Cloud Service에는 다음과 같이 4 가지 유형의 패키지로 라이센스가 구분됩니다.
- Standard Edition Enterprise Edition  TDE (transparent Data Encryption) Data Guard  Enterprise Edition High Performance  Multitenant Partitioning Advanced Compression Advanced Security Database Vault  Enterprise Edition Extreme Performance  Oracle RAC 지원 In-memory Active Data Guard   2017년 04월 현재 Oracle Database CS의 지원 버전은 다음과 같습니다.</description>
     </item>
     
     <item>
@@ -308,7 +308,7 @@ SSH 프로토콜에 대한 자세한 내용은 다음 문서를 참조하시기 
     </item>
     
     <item>
-      <title>오라클 클라우드 계정 생성하기</title>
+      <title>오라클 클라우드 계정</title>
       <link>http://www.oracloud.kr/post/accont/</link>
       <pubDate>Thu, 02 Mar 2017 21:59:47 +0900</pubDate>
       

@@ -66,9 +66,9 @@ OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소
     </item>
     
     <item>
-      <title>Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo</title>
+      <title>Oracle Database CS: 인스턴스 생성 및 접속 Demo</title>
       <link>http://www.oracloud.kr/post/dbcs_demo/</link>
-      <pubDate>Tue, 07 Mar 2017 13:20:12 +0900</pubDate>
+      <pubDate>Sun, 12 Mar 2017 13:20:12 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/dbcs_demo/</guid>
       <description>Oracle DBMS 소개 Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 PaaS 형태로 제공하는 오라클 데이터베이스 서비스입니다.
@@ -101,7 +101,7 @@ SSH 프로토콜에 대한 자세한 내용은 다음 문서를 참조하시기 
     </item>
     
     <item>
-      <title>오라클 클라우드 계정 생성하기</title>
+      <title>오라클 클라우드 계정</title>
       <link>http://www.oracloud.kr/post/accont/</link>
       <pubDate>Thu, 02 Mar 2017 21:59:47 +0900</pubDate>
       
