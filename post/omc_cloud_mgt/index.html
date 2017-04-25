@@ -12,16 +12,15 @@
 <meta name="description" content="오라클 클라우드 기술 블로그">
 <meta name="generator" content="Hugo 0.21-DEV" />
 <meta property="og:title" content="OMC: 클라우드 기반 차세대 인프라 운영관리" />
-<meta property="og:description" content="클라우드를 이용한 차세대 인프라 운영관리 방안. Oracle Management Cloud Service (이하 OMC)를 통한 기존 On-Premise의 인프라 운영 문제점의 해결 방법과 차세대 인프라 관리 방법에 대한 방안 소개.
- 클라우드 시대 머신러닝을 포함한 IT Trend에 발맞추어 IT 운영 관리는 어떻게 발전되어야 할까요? 고객들은 어떤 어려움을 해결하고 싶어할까요? 데모를 통해 비즈니스 어플리케이션 장애를 신속하게 해결하는 방법은? 오라클의 클라우드 관리 서비스를 이용한 차세대 IT 운영 관리방법은?
+<meta property="og:description" content="OMC : 클라우드를 이용한 차세대 인프라 운영관리 방안  클라우드 시대 머신러닝을 포함한 IT Trend에 발맞추어 IT 운영 관리는 어떻게 발전되어야 할까요? 고객들은 어떤 어려움을 해결하고 싶어할까요? 데모를 통해 비즈니스 어플리케이션 장애를 신속하게 해결하는 방법은? 오라클의 클라우드 관리 서비스를 이용한 차세대 IT 운영 관리방법은?
   OMC는 기존 개별화된 IT 조직 업무의 단위 모니터링 솔루션에 대한 비 효율성을 극복하기 위해 다양한 인프라의 많은 분석 대이터를 효율적으로 분석하며, 인프라 전반의 통합 모니터링 및 시스템의 성능 예측, 장애분석, 비정상적 행위를 탐지하는 기능을 제공합니다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.oracloud.kr/post/omc_cloud_mgt/" />
 
 
 
-<meta property="article:published_time" content="2017-04-23T10:31:26&#43;09:00"/>
-<meta property="article:modified_time" content="2017-04-23T10:31:26&#43;09:00"/>
+<meta property="article:published_time" content="2017-04-21T10:31:26&#43;09:00"/>
+<meta property="article:modified_time" content="2017-04-21T10:31:26&#43;09:00"/>
 
 
 
@@ -49,8 +48,8 @@
 		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 			<div class="container container-inner clearfix">
 				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
-					<a class="logo__link" href="http://www.oracloud.kr/" title="Oracle Public Cloud - 기술블로그" rel="home">
-						<h1 class="logo__title">Oracle Public Cloud - 기술블로그</h1>
+					<a class="logo__link" href="http://www.oracloud.kr/" title="Oracle Cloud 블로그" rel="home">
+						<h1 class="logo__title">Oracle Cloud 블로그</h1>
 						<h2 class="logo__tagline">한국오라클 DBU, 클라우드 세일즈 컨설팅팀</h2>
 					</a>
 				</div>
@@ -76,10 +75,10 @@
 			<h1 class="post__title">OMC: 클라우드 기반 차세대 인프라 운영관리</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2017-04-23 10:31:26 &#43;0900 &#43;0900">April 23, 2017</time>
+				<time class="post__meta-date" datetime="2017-04-21 10:31:26 &#43;0900 &#43;0900">April 21, 2017</time>
 				<span class="post__meta-categories meta-categories">
 					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-					<a class="meta-categories__link" href="/categories/oracle-management-cloud" rel="category">oracle management cloud</a></span>
+					<a class="meta-categories__link" href="/categories/oracle-management-cloud" rel="category">Oracle Management Cloud</a></span>
 			</p>
 		</header>
 		<div class="post__content clearfix">
@@ -88,9 +87,7 @@
 			</figure>
 			
 
-<h2 id="클라우드를-이용한-차세대-인프라-운영관리-방안">클라우드를 이용한 차세대 인프라 운영관리 방안.</h2>
-
-<p>Oracle Management Cloud Service (이하 OMC)를 통한 기존 On-Premise의 인프라 운영 문제점의 해결 방법과 차세대 인프라 관리 방법에 대한 방안 소개.</p>
+<h2 id="omc-클라우드를-이용한-차세대-인프라-운영관리-방안">OMC : 클라우드를 이용한 차세대 인프라 운영관리 방안</h2>
 
 <ul>
 <li>클라우드 시대 머신러닝을 포함한 IT Trend에 발맞추어 IT 운영 관리는 어떻게 발전되어야 할까요?</li>
@@ -117,12 +114,24 @@
 
 <h3 id="2-병목-현상-예측">2. 병목 현상 예측</h3>
 
-<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC2.jpg" alt="" /></p>
+<ul>
+<li>특정 기간의 Exadata 전체 DB의 스토리지 용량 및 메모리 사용량 모니터링</li>
+<li>Exadata Rack 전체 범위</li>
+<li>DB 노드 메모리 바인딩 현상 =&gt; 병목</li>
+
+<li><p>개별 메모리 사용량 분석을 통한 향후 사용량 예측</p>
+
+<ul>
+<li>그림 3. Host Resource Analytics
+<img src="https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC2.jpg" alt="" /></li>
+</ul></li>
+</ul>
 
 <h3 id="3-database-리소스-통합-분석">3. Database 리소스 통합 분석</h3>
 
-<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC3.jpg" alt="" />
-<img src="https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC31.jpg" alt="" /></p>
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC3.jpg" alt="" /></p>
+
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC31.jpg" alt="" /></p>
 
 <h3 id="4-다양한-기본-데쉬보드-및-사용자-데쉬보드-제공">4. 다양한 기본 데쉬보드 및 사용자 데쉬보드 제공</h3>
 
@@ -170,10 +179,10 @@
 	
 <nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 	<div class="post-nav__item post-nav__item--prev col-1-2">
-		<a class="post-nav__link" href="http://www.oracloud.kr/post/bmcs_terraform/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Oracle BMCS에서 Terraform을 이용한 관리 자동화 구축</p></a>
+		<a class="post-nav__link" href="http://www.oracloud.kr/post/occs-new-inst/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Oracle Container CS 인스턴스 생성</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="http://www.oracloud.kr/post/occs_new_docker_container/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">OCCS에 Docker 이미지 배포</p></a>
+		<a class="post-nav__link" href="http://www.oracloud.kr/post/omc/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Oracle Management Cloud(OMC) 소개</p></a>
 	</div>
 </nav>
 
@@ -218,7 +227,7 @@ s.setAttribute('data-timestamp', +new Date());
 <ul>
 <li>
 <ul>
-<li><a href="#클라우드를-이용한-차세대-인프라-운영관리-방안">클라우드를 이용한 차세대 인프라 운영관리 방안.</a>
+<li><a href="#omc-클라우드를-이용한-차세대-인프라-운영관리-방안">OMC : 클라우드를 이용한 차세대 인프라 운영관리 방안</a>
 <ul>
 <li><a href="#omc의-log-및-it성능-data-수집-및-전송-방법">OMC의 log 및 IT성능 Data 수집 및 전송 방법</a></li>
 <li><a href="#1-신속한-문제-해결">1. 신속한 문제 해결</a></li>
@@ -244,16 +253,16 @@ s.setAttribute('data-timestamp', +new Date());
 							OCCS에 Docker 이미지 배포</a>
 		  </li>
 			<li class="widget__item">
-				<a class="widget__link" href="/post/omc_cloud_mgt/" title="OMC: 클라우드 기반 차세대 인프라 운영관리">
-							OMC: 클라우드 기반 차세대 인프라 운영관리</a>
-		  </li>
-			<li class="widget__item">
 				<a class="widget__link" href="/post/bmcs_terraform/" title="Oracle BMCS에서 Terraform을 이용한 관리 자동화 구축">
 							Oracle BMCS에서 Terraform을 이용한 관리 자동화 구축</a>
 		  </li>
 			<li class="widget__item">
 				<a class="widget__link" href="/post/omc/" title="Oracle Management Cloud(OMC) 소개">
 							Oracle Management Cloud(OMC) 소개</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="/post/omc_cloud_mgt/" title="OMC: 클라우드 기반 차세대 인프라 운영관리">
+							OMC: 클라우드 기반 차세대 인프라 운영관리</a>
 		  </li>
 			<li class="widget__item">
 				<a class="widget__link" href="/post/occs-new-inst/" title="Oracle Container CS 인스턴스 생성">
@@ -377,7 +386,7 @@ s.setAttribute('data-timestamp', +new Date());
 	</div>
 		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 			<div class="container container-inner">
-				<p class="footer__copyright">&copy; 2017 Oracle Public Cloud - 기술블로그. </p>
+				<p class="footer__copyright">&copy; 2017 Oracle Cloud 블로그. </p>
 			</div>
 		</footer>
 	</div>

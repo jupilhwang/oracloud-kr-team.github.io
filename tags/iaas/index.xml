@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Iaas on Oracle Public Cloud - 기술블로그</title>
+    <title>Iaas on Oracle Cloud 블로그</title>
     <link>http://www.oracloud.kr/tags/iaas/</link>
-    <description>Recent content in Iaas on Oracle Public Cloud - 기술블로그</description>
+    <description>Recent content in Iaas on Oracle Cloud 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 21 Apr 2017 17:15:48 +0900</lastBuildDate>

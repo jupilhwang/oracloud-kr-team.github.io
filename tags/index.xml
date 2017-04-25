@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Oracle Public Cloud - 기술블로그</title>
+    <title>Tags on Oracle Cloud 블로그</title>
     <link>http://www.oracloud.kr/tags/</link>
-    <description>Recent content in Tags on Oracle Public Cloud - 기술블로그</description>
+    <description>Recent content in Tags on Oracle Cloud 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Wed, 19 Apr 2017 19:01:16 +0900</lastBuildDate>
@@ -113,7 +113,7 @@
     <item>
       <title>Management</title>
       <link>http://www.oracloud.kr/tags/management/</link>
-      <pubDate>Sun, 23 Apr 2017 10:31:26 +0900</pubDate>
+      <pubDate>Fri, 21 Apr 2017 10:31:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/management/</guid>
       <description></description>
@@ -158,7 +158,7 @@
     <item>
       <title>Omc</title>
       <link>http://www.oracloud.kr/tags/omc/</link>
-      <pubDate>Sun, 23 Apr 2017 10:31:26 +0900</pubDate>
+      <pubDate>Fri, 21 Apr 2017 15:00:47 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/omc/</guid>
       <description></description>
