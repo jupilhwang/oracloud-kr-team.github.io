@@ -8,10 +8,10 @@
 <META http-equiv="Pragma" content="no-cache">
 <META http-equiv="Cache-Control" content="No-Cache">
 
-<title>우분투 17.04 가상머신 생성</title>
+<title>우분투 17.04 가상머신 만들기</title>
 <meta name="description" content="오라클 클라우드 기술 블로그">
 <meta name="generator" content="Hugo 0.21-DEV" />
-<meta property="og:title" content="우분투 17.04 가상머신 생성" />
+<meta property="og:title" content="우분투 17.04 가상머신 만들기" />
 <meta property="og:description" content="오라클 클라우드의 Compute 서비스는 최근에 업그레이드가 적용되었고, 가상 머신 인스턴스를 UI가 일정부분 변경되었습니다. 변경된 UI상에서 가상머신을 생성하는 방법에 대하여 알아보겠습니다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.oracloud.kr/post/compute_instance/" />
@@ -61,7 +61,7 @@
 		<li class="menu__item "><a class="menu__link" href="/opc-iaas/" title="IaaS 서비스 관련 문서를 정리하는 페이지입니다." >IAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-paas/" title="PaaS 서비스 관련 문서를 정리하는 페이지입니다." >PAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-terminology/" title="오라클 클라우드에서 각 서비스에서 사용하는 용어의 정의를 정리합니다." >OPC 용어사전</a></li>
-		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
+		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="채팅룸으로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
 	</ul>
 </nav>
 
@@ -72,7 +72,7 @@
 <div class="main-content content" role="main" itemprop="mainContentOfPage">
 	<article class="post">
 		<header class="post__header clearfix">
-			<h1 class="post__title">우분투 17.04 가상머신 생성</h1>
+			<h1 class="post__title">우분투 17.04 가상머신 만들기</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
 				<time class="post__meta-date" datetime="2017-05-02 11:59:47 &#43;0900 &#43;0900">May 02, 2017</time>
@@ -112,7 +112,9 @@ SSH 접근을 위한 네트워크 보안 룰 설정 및 블록 스토리지 마�
 <li><a href="/post/ssh_key/">윈도우, 리눅스, 맥에서 SSH 보안키 생성</a></li>
 </ul>
 
-<h2 id="compute-cs-가상머신-생성">Compute CS 가상머신 생성</h2>
+<h2 id="compute-cs-가상머신-만들기">Compute CS 가상머신 만들기</h2>
+
+<h3 id="ubuntu-17-04-인스턴스-만들기">Ubuntu 17.04 인스턴스 만들기</h3>
 
 <p>Compute CS에 Ubuntu 17.04 이미지로 가상머신을 생성하겠습니다.</p>
 
@@ -403,7 +405,7 @@ Ubuntu_17_04_amd64에 설정된 공개 IP는 129.144.12.116입니다.</p>
 <img src="https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img200.jpg" alt="" /></li>
 </ul>
 
-<h2 id="가상머신-접근을-위한-ssh-보안-설정">가상머신 접근을 위한 SSH 보안 설정</h2>
+<h3 id="가상머신-접근을-위한-ssh-보안-설정">가상머신 접근을 위한 SSH 보안 설정</h3>
 
 <p>Ubuntu_17_04_amd64 가상머신이 생성된 후에, &lt;그림 21&gt;과 같이 129.144.12.116에 SSH 키로 접근하면
 , <code>Time out</code>되어 실패합니다.</p>
@@ -449,7 +451,7 @@ Ubuntu_17_04_amd64 가상 머신은 <code>deault</code> Secutiry List에 포함�
 <img src="https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img230.jpg" alt="" /></li>
 </ul>
 
-<h2 id="블록-스토리지-마운트">블록 스토리지 마운트</h2>
+<h3 id="블록-스토리지-마운트">블록 스토리지 마운트</h3>
 
 <p>&lt;그림 15&gt;에서 data_vol 블록 스토리지를 Ubuntu_17_04_amd64에 추가 했습니다. data_vol은 index가 2입니다.
 이 블록 스토리지는 /dev/xvdc로 표현됩니다.</p>
@@ -654,9 +656,12 @@ s.setAttribute('data-timestamp', +new Date());
 <li>
 <ul>
 <li><a href="#선행-작업">선행 작업</a></li>
-<li><a href="#compute-cs-가상머신-생성">Compute CS 가상머신 생성</a></li>
+<li><a href="#compute-cs-가상머신-만들기">Compute CS 가상머신 만들기</a>
+<ul>
+<li><a href="#ubuntu-17-04-인스턴스-만들기">Ubuntu 17.04 인스턴스 만들기</a></li>
 <li><a href="#가상머신-접근을-위한-ssh-보안-설정">가상머신 접근을 위한 SSH 보안 설정</a></li>
 <li><a href="#블록-스토리지-마운트">블록 스토리지 마운트</a></li>
+</ul></li>
 <li><a href="#가상머신-인스턴스-재시작">가상머신 인스턴스 재시작</a></li>
 <li><a href="#orchestration에서-가상머신-제어">Orchestration에서 가상머신 제어</a></li>
 <li><a href="#요약">요약</a></li>
@@ -672,8 +677,8 @@ s.setAttribute('data-timestamp', +new Date());
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
-				<a class="widget__link" href="/post/compute_instance/" title="우분투 17.04 가상머신 생성">
-							우분투 17.04 가상머신 생성</a>
+				<a class="widget__link" href="/post/compute_instance/" title="우분투 17.04 가상머신 만들기">
+							우분투 17.04 가상머신 만들기</a>
 		  </li>
 			<li class="widget__item">
 				<a class="widget__link" href="/post/storage_cs/" title="Oracle Storage Cloud Service">
