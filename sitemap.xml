@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.oracloud.kr/post/compute_security/</loc>
+    <lastmod>2017-05-04T13:23:35+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/compute_instance/</loc>
     <lastmod>2017-05-02T11:59:47+09:00</lastmod>
   </url>
@@ -226,6 +231,18 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/compute/</loc>
+    <lastmod>2017-05-04T13:23:35+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/categories/compute/</loc>
+    <lastmod>2017-05-04T13:23:35+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/compute-cs/</loc>
     <lastmod>2017-05-02T11:59:47+09:00</lastmod>
     <priority>0</priority>
@@ -371,7 +388,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-05-02T11:59:47+09:00</lastmod>
+    <lastmod>2017-05-04T13:23:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -389,7 +406,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/post/</loc>
-    <lastmod>2017-05-02T11:59:47+09:00</lastmod>
+    <lastmod>2017-05-04T13:23:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -402,6 +419,12 @@
   <url>
     <loc>http://www.oracloud.kr/categories/ravello/</loc>
     <lastmod>2017-04-15T16:05:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/security/</loc>
+    <lastmod>2017-05-04T13:23:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
