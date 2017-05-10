@@ -102,11 +102,29 @@
     </item>
     
     <item>
+      <title>Data Management</title>
+      <link>http://www.oracloud.kr/tags/data-management/</link>
+      <pubDate>Thu, 04 May 2017 17:17:35 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/tags/data-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Visualization</title>
       <link>http://www.oracloud.kr/tags/data-visualization/</link>
       <pubDate>Wed, 26 Apr 2017 15:00:47 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database</title>
+      <link>http://www.oracloud.kr/tags/database/</link>
+      <pubDate>Thu, 04 May 2017 17:17:35 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/tags/database/</guid>
       <description></description>
     </item>
     
@@ -188,6 +206,15 @@
       <pubDate>Fri, 21 Apr 2017 15:00:47 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>http://www.oracloud.kr/tags/mysql/</link>
+      <pubDate>Thu, 04 May 2017 17:17:35 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/tags/mysql/</guid>
       <description></description>
     </item>
     

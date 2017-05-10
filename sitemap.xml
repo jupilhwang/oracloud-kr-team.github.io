@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.oracloud.kr/post/mysqlcs/</loc>
+    <lastmod>2017-05-04T17:17:35+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/compute_security/</loc>
     <lastmod>2017-05-04T13:23:35+09:00</lastmod>
   </url>
@@ -261,14 +266,32 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/data-management/</loc>
+    <lastmod>2017-05-04T17:17:35+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/data-visualization/</loc>
     <lastmod>2017-04-26T15:00:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/database/</loc>
+    <lastmod>2017-05-04T17:17:35+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/database-backup/</loc>
     <lastmod>2017-03-31T17:51:51+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/categories/database-cloud/</loc>
+    <lastmod>2017-05-04T17:17:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -339,6 +362,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/mysql/</loc>
+    <lastmod>2017-05-04T17:17:35+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/nested-virtualization/</loc>
     <lastmod>2017-04-15T16:05:59+09:00</lastmod>
     <priority>0</priority>
@@ -388,7 +417,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-05-04T13:23:35+09:00</lastmod>
+    <lastmod>2017-05-04T17:17:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -406,7 +435,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/post/</loc>
-    <lastmod>2017-05-04T13:23:35+09:00</lastmod>
+    <lastmod>2017-05-04T17:17:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
