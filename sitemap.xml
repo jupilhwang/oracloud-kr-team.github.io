@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.oracloud.kr/post/dbcsbackup/</loc>
+    <lastmod>2017-05-10T16:20:58+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/mysql_cs/</loc>
     <lastmod>2017-05-10T15:48:24+09:00</lastmod>
   </url>
@@ -206,6 +211,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/tags/backup/</loc>
+    <lastmod>2017-05-10T16:20:58+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/bdpcs/</loc>
     <lastmod>2017-04-25T15:00:47+09:00</lastmod>
     <priority>0</priority>
@@ -271,8 +282,14 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/categories/data-management/</loc>
+    <lastmod>2017-05-10T16:20:58+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/data-management/</loc>
-    <lastmod>2017-05-04T17:17:35+09:00</lastmod>
+    <lastmod>2017-05-10T16:20:58+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -284,7 +301,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/database/</loc>
-    <lastmod>2017-05-10T15:48:24+09:00</lastmod>
+    <lastmod>2017-05-10T16:20:58+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -302,7 +319,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/dbcs/</loc>
-    <lastmod>2017-03-31T17:51:51+09:00</lastmod>
+    <lastmod>2017-05-10T16:20:58+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -428,7 +445,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-05-10T15:48:24+09:00</lastmod>
+    <lastmod>2017-05-10T16:20:58+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -452,7 +469,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/post/</loc>
-    <lastmod>2017-05-10T15:48:24+09:00</lastmod>
+    <lastmod>2017-05-10T16:20:58+09:00</lastmod>
     <priority>0</priority>
   </url>
   
