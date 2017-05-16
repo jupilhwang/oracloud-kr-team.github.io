@@ -6,10 +6,21 @@
     <description>Recent content in Analytics on Oracle Cloud 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 26 Apr 2017 15:00:47 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 15 May 2017 15:00:47 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>쉽게 따라해보는 데이터 시각화 제2회 &#39;데이터 연결&#39;</title>
+      <link>http://www.oracloud.kr/post/dvcs002/</link>
+      <pubDate>Mon, 15 May 2017 15:00:47 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/dvcs002/</guid>
+      <description>데이터 시각화를 위해서 가장 먼저 해야 할 작업은 &amp;lsquo;분석에 사용할 데이터의 연결&amp;rsquo;입니다.
+ODV(Oracle Data Visualization)는 데이터 시각화를 위해서 다양한 File, RDB, Hadoop 등 데이터소스를 지원하고 있으며, 분석가능한 데이터소스를 계속적으로 추가하고 있습니다. 현재까지 지원되고있는 데이터소스는 다음과 같습니다.
+ Amazon Redshift Apache Hadoop Hive Cloudera Hadoop Hive Cloudera Impala Dropbox Greenplum Google Analytics Hortonworks Hadoop Hive IBM DB2 Impala Informix Microsoft Excel Microsoft SQL Server MongoDB MySQL Netezza Oracle SaaS Application Oracle Database Oracle Essbase Salesforce SAP SybaseIQ Spark Teradata  데이터소스 선택 데이터소스의 접속을 위해서, 먼저 DVD(Data Visualization Desktop) 상단의 &amp;lsquo;데이터소스&amp;rsquo;메뉴을 클릭합니다.</description>
+    </item>
     
     <item>
       <title>쉽게 따라해보는 데이터 시각화 제1회 &#39;실습환경 구성&#39;</title>
