@@ -18,7 +18,8 @@
       
       <guid>http://www.oracloud.kr/post/mysql_cs/</guid>
       <description>Oracle MySQL Cloud Service 개요 오라클이 오픈소스 형태로 개발하는 MySQL은 전 세계에서 가장 많이 사용되는 오픈소스 데이터베이스 입니다. 오라클 클라우드는 Oracle MySQL Cloud Service(이하 Oracle MySQL CS)를 2016년 11월에 출시하였습니다. 2017년 5월 현재 오라클 클라우드는 관계형 데이터베이스 서비스1로 Oracle과 MySQL을 제공합니다.
-Oracle MySQL CS는 Oracle Cloud(Compute CS와 Storage CS)에 MySQL Enterprise Edition을 최적화하여 높은 성능과 안정성 사용자에게 제공합니다. 또한, Oracle MySQL CS 인스턴스의 라이프사이클을 효과적으로 관리하는 방법도 제공합니다. Oracle MySQL CS는 높은 수준의 엔터프라이즈 요건을 충족하는 MySQL 서비스를 고객에게 제공하는 것을 목표로 합니다.</description>
+Oracle MySQL CS는 Oracle Cloud(Compute CS와 Storage CS)에 MySQL Enterprise Edition을 최적화하여 높은 성능 및 안정성 제공하며, 관리 효율성을 높이는 데이터베이스 관리 툴이 포함되어 있습니다.
+Oracle MySQL CS가 제공하는 엔터프라이즈 지원 기능은 다음과 같습니다.</description>
     </item>
     
   </channel>
