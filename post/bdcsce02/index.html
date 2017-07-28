@@ -8,17 +8,19 @@
 <META http-equiv="Pragma" content="no-cache">
 <META http-equiv="Cache-Control" content="No-Cache">
 
-<title>Mysql</title>
+<title>Oracle Big Data – Compute Edition: 인스턴스 생성 </title>
 <meta name="description" content="오라클 클라우드 기술 블로그">
 <meta name="generator" content="Hugo 0.26-DEV" />
-<meta property="og:title" content="Mysql" />
-<meta property="og:description" content="오라클 클라우드 기술 블로그" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.oracloud.kr/categories/mysql/" />
+<meta property="og:title" content="Oracle Big Data – Compute Edition: 인스턴스 생성 " />
+<meta property="og:description" content="오라클 클라우드는 Hadoop PaaS 서비스로 Oracle Big Data Cloud Service Compute-Edition(이하 BDCSCE)을 지난 2017년 03월에 출시하였습니다. BDCSCE는 Hortonworks의 HDP를 기반으로 합니다. BCCSCE를 인스턴스를 생성하는 절차를 소개합니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.oracloud.kr/post/bdcsce02/" />
 
 
 
-<meta property="og:updated_time" content="2017-05-10T15:48:24&#43;09:00"/>
+<meta property="article:published_time" content="2017-07-28T11:59:47&#43;09:00"/>
+<meta property="article:modified_time" content="2017-07-28T11:59:47&#43;09:00"/>
+
 
 
 
@@ -30,7 +32,7 @@
 
 
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-<link rel="alternate" type="application/rss+xml" title="Oracle Cloud 블로그 Feed" href="http://www.oracloud.kr/categories/mysql/index.xml">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
 <link rel="stylesheet" href="http://www.oracloud.kr/css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="http://www.oracloud.kr/css/minsu.css" type="text/css" media="all" />
@@ -66,40 +68,118 @@
 		<div class="wrapper clearfix">
 
 
-	<div class="main-content loop content" role="main">
-		<header class="page-header">
-			<h1 class="page-header__title">Mysql</h1>
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Oracle Big Data – Compute Edition: 인스턴스 생성 </h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2017-07-28 11:59:47 &#43;0900 &#43;0900">July 28, 2017</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/big-data-compute-edition" rel="category">big data compute-edition</a></span>
+			</p>
 		</header>
-		<article class="loop__item post clearfix">
-			<figure class="loop__thumbnail">
-				<a href="http://www.oracloud.kr/post/mysql_cs/">
-					<img src="https://oracloud-kr-teamrepo.github.io/2017/04/mysqlcs_01/mysqlcs.jpg" alt="Oracle MySQL Cloud Service" />
-				</a>
+		<div class="post__content clearfix">
+			<figure class="post__thumbnail">
+				<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/oracloud-big-logo.jpg" alt="Oracle Big Data – Compute Edition: 인스턴스 생성 ">
 			</figure>
-			<div class="loop__content clearfix">
-				<header class="loop__header">
-					<h3 class="loop__title post__title ">
-						<a href="http://www.oracloud.kr/post/mysql_cs/" rel="bookmark">Oracle MySQL Cloud Service</a>
-					</h3>
-					<div class="loop__meta meta">
-						<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-						<time class="loop__meta-date" datetime="2017-05-10 15:48:24 &#43;0900 &#43;0900">May 10, 2017</time>
-					</div>
-				</header>
-				<div class="loop__excerpt">
-									  Oracle MySQL Cloud Service 개요 오라클이 오픈소스 형태로 개발하고 있는 MySQL은 전 세계에서 가장 많이 사용되는 오픈소스 데이터베이스 입니다. 오라클 클라우드는 Oracle MySQL Cloud Service(이하 MySQL CS)를 2016년 11월에 출시하였습니다. 2017년 5월 현재 오라클 클라우드는 관계형 데이터베이스 서비스1로 Oracle Database CS와 MySQL CS를 제공합니다.
-MySQL CS는 ......
-				</div>
-				<div class="loop__excerpt">
-						<a class="label" href="/tags/mysql/" rel="tag">mysql</a></li>
-						<a class="label" href="/tags/paas/" rel="tag">paas</a></li>
-						<a class="label" href="/tags/database/" rel="tag">database</a></li>
-				</div>
-			</div>
-		</article>
+			
 
+<p>오라클 클라우드는 Hadoop PaaS 서비스로 <strong>Oracle Big Data Cloud Service Compute-Edition</strong>(이하 BDCSCE)을 지난 2017년 03월에 출시하였습니다. BDCSCE는 Hortonworks의 HDP를 기반으로 합니다. BCCSCE를 인스턴스를 생성하는 절차를 소개합니다.</p>
+
+<h2 id="ddd">ddd</h2>
+
+<h3 id="kkk">kkk</h3>
+
+<h3 id="kkk-1">kkk</h3>
+
+<h3 id="kkk-2">kkk</h3>
+
+<h3 id="kkk-3">kkk</h3>
+
+<h3 id="kkk-4">kkk</h3>
+
+<h2 id="test">test</h2>
+
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_01.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_02.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_03.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_04.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_05.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_06.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_07.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_08.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_09.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_10.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_11.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_12.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_13.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_14.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_15.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_16.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_17.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_18.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_19.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_20.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_21.jpg" alt="" />
+<img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_22.jpg" alt="" /></p>
+
+		</div>
 		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/big-data/" rel="tag">big data</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/hadoop/" rel="tag">hadoop</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/spark/" rel="tag">spark</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="김태완 avatar" src="http://www.oracloud.kr/img/author/taewan.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">작성자: 김태완</span>
 	</div>
+	<div class="authorbox__description">
+		한국오라클 DBU 클라우드 서비스 팀 소속입니다. 클라우드, 가상화, 네트워크, 데이터 분석에 중심을 두고 있습니다.
+	</div>
+	<div class="authorbox__description">
+		E-mail: oracloud.kr@gmail.com
+	</div>
+</div>
+
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="http://www.oracloud.kr/post/bdcsce01/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Oracle Big Data – Compute Edition</p></a>
+	</div>
+</nav>
+
+	
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://oracloud-kr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
 
 <aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 	
@@ -114,6 +194,27 @@ MySQL CS는 ......
 	</form>
 </div>
 	
+<div class="widget-categories widget">
+	<h4 class="widget__title">ToC (목차)</h4>
+	<div class="widget__content">
+	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#ddd">ddd</a>
+<ul>
+<li><a href="#kkk">kkk</a></li>
+<li><a href="#kkk-1">kkk</a></li>
+<li><a href="#kkk-2">kkk</a></li>
+<li><a href="#kkk-3">kkk</a></li>
+<li><a href="#kkk-4">kkk</a></li>
+</ul></li>
+<li><a href="#test">test</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
 
 	
 <div class="widget-recent widget">
