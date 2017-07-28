@@ -59,7 +59,7 @@
     <item>
       <title>Big Data</title>
       <link>http://www.oracloud.kr/tags/big-data/</link>
-      <pubDate>Tue, 25 Apr 2017 15:00:47 +0900</pubDate>
+      <pubDate>Thu, 27 Jul 2017 11:59:47 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/big-data/</guid>
       <description></description>
@@ -179,6 +179,15 @@
       <pubDate>Mon, 24 Apr 2017 19:34:26 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hadoop</title>
+      <link>http://www.oracloud.kr/tags/hadoop/</link>
+      <pubDate>Thu, 27 Jul 2017 11:59:47 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/tags/hadoop/</guid>
       <description></description>
     </item>
     
@@ -305,6 +314,15 @@
       <pubDate>Thu, 04 May 2017 13:23:35 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spark</title>
+      <link>http://www.oracloud.kr/tags/spark/</link>
+      <pubDate>Thu, 27 Jul 2017 11:59:47 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/tags/spark/</guid>
       <description></description>
     </item>
     
