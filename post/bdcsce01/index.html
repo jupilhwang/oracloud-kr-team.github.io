@@ -60,7 +60,7 @@
 		<li class="menu__item "><a class="menu__link" href="/opc-iaas/" title="IaaS 서비스 관련 문서를 정리하는 페이지입니다." >IAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-paas/" title="PaaS 서비스 관련 문서를 정리하는 페이지입니다." >PAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-terminology/" title="오라클 클라우드에서 각 서비스에서 사용하는 용어의 정의를 정리합니다." >OPC 용어사전</a></li>
-		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
+		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="채팅룸으로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
 	</ul>
 </nav>
 
@@ -203,13 +203,15 @@
 
 <h3 id="차별성-2-스트리밍-데이터-처리-환경">차별성&gt;2. 스트리밍 데이터 처리 환경</h3>
 
-<p>오라클은 스트리밍 데이터를 수집하는 서비스로 Oracle Event Hub CS를 제공합니다. Oracle Event Hub CS의 실체는 Apache Kafka입니다. Oracle BDCSCS는 Oracle Event Hub CS에 빠른 접근이 가능한 인프라 환경(네트워크 구성)을 제공합니다. Oracle Event Hub CS와 Oracle BDCSCE를 사용하여 고성능 스트리밍 데이터 분석환경을 구성할 수 있습니다. Oracle Event Hub CS와 Oracle BDCSCE의 Spark Streaming을 사용하여 실시간 이벤트 처리 시스템으로 CEP(Context Event Processing)를 구성할 수 있습니다.</p>
+<p>오라클은 스트리밍 데이터를 수집하는 서비스로 Oracle Event Hub CS를 제공합니다. Oracle Event Hub CS의 실체는 Apache Kafka입니다. Oracle BDCSCE는 Oracle Event Hub CS에 빠른 접근이 가능한 인프라 환경(네트워크 구성)을 제공합니다. Oracle Event Hub CS와 Oracle BDCSCE를 사용하여 고성능 스트리밍 데이터 분석환경을 구성할 수 있습니다. Oracle Event Hub CS와 Oracle BDCSCE의 Spark Streaming을 사용하여 실시간 이벤트 처리 시스템으로 CEP(Context Event Processing)를 구성할 수 있습니다.</p>
 
 <p><img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/eventhubbdcsce.jpg" alt="" /></p>
 
-<h3 id="차별성-3-관계형-데이터베이스-통합-기능">차별성&gt;3. 관계형 데이터베이스 통합 기능</h3>
+<h3 id="차별성-3-관계형-데이터베이스-및-클라우드-스토리지-통합">차별성&gt;3. 관계형 데이터베이스 및 클라우드 스토리지 통합</h3>
 
-<p>Oracle BDCSCE는 Oracle Big Data SQL과 Big Data Connector 기술과 함께 사용할 수 있습니다. Oracle Big Data SQL은 오라클 데이터베이스이 하둡 데이터를 External Table로 인식시킵니다. 이 기술을 사용하면 오라클 데이터베이스는 하둡 데이터(Hive, 파일, HBase)를 오라클 테이블로 인식하고 Oracle SQL로 다른 테이블과 함께 Join 쿼리를 수행할 수 있습니다.</p>
+<p>Oracle BDCSCE는 Oracle DBCS(Oracle Database Cloud Service), Oracle MySQL CS, OEHCS(Oracle EventHub Cloud Service) 및 Oracle Storage Cloud Service와 통합되어 있습니다.</p>
+
+<p><img src="https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/dbcsintegration.jpg" alt="" /></p>
 
 <h2 id="oracle-bdcsce-주요-특징">Oracle BDCSCE 주요 특징</h2>
 
@@ -401,7 +403,7 @@ s.setAttribute('data-timestamp', +new Date());
 <ul>
 <li><a href="#차별성-1-public-private">차별성&gt;1. Public &amp; Private</a></li>
 <li><a href="#차별성-2-스트리밍-데이터-처리-환경">차별성&gt;2. 스트리밍 데이터 처리 환경</a></li>
-<li><a href="#차별성-3-관계형-데이터베이스-통합-기능">차별성&gt;3. 관계형 데이터베이스 통합 기능</a></li>
+<li><a href="#차별성-3-관계형-데이터베이스-및-클라우드-스토리지-통합">차별성&gt;3. 관계형 데이터베이스 및 클라우드 스토리지 통합</a></li>
 </ul></li>
 <li><a href="#oracle-bdcsce-주요-특징">Oracle BDCSCE 주요 특징</a>
 <ul>

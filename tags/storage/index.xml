@@ -22,12 +22,12 @@ Oracle Storage Cloud Service는 인터넷 접근이 가능한 어디서나 데�
     </item>
     
     <item>
-      <title>Oracle Storage Cloud Serivce 활성화</title>
+      <title>Oracle Storage Cloud Service 활성화</title>
       <link>http://www.oracloud.kr/post/objest-storage-replication/</link>
       <pubDate>Mon, 06 Mar 2017 08:54:32 +0900</pubDate>
       
       <guid>http://www.oracloud.kr/post/objest-storage-replication/</guid>
-      <description>Oracle Storage Cloud Serivce(이하 Storage Cloud)는 오라클 클라우드의 핵심 서비스입니다. 오라클 클라우드의 대부분의 서비스는 데이터 저장 목적으로 Storage Cloud를 사용합니다. 오라클 클라우드에서 Storage Cloud를 사용하는 서비스는 다음과 같습니다.
+      <description>Oracle Storage Cloud Service(이하 Storage Cloud)는 오라클 클라우드의 핵심 서비스입니다. 오라클 클라우드의 대부분의 서비스는 데이터 저장 목적으로 Storage Cloud를 사용합니다. 오라클 클라우드에서 Storage Cloud를 사용하는 서비스는 다음과 같습니다.
    서비스 설명     Java Cloud Service(이하 JCS) JCS는 클러스터 백업 및 메타 정보 저장을 위해서 Storage Cloud를 사용합니다. JCS 설정시 Storage Cloud 정보 입력이 필 수 사항입니다.   Database CS (이하 DBCS) DBCS는 데이터베이스 백업에 Storage Cloud를 사용합니다.</description>
     </item>
     
