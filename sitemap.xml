@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.oracloud.kr/post/bdcsce02/</loc>
-    <lastmod>2017-07-28T11:59:47+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.oracloud.kr/post/bdcsce01/</loc>
     <lastmod>2017-07-27T11:59:47+09:00</lastmod>
   </url>
@@ -239,13 +234,13 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/big-data/</loc>
-    <lastmod>2017-07-28T11:59:47+09:00</lastmod>
+    <lastmod>2017-07-27T11:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.oracloud.kr/categories/big-data/</loc>
-    <lastmod>2017-07-28T11:59:47+09:00</lastmod>
+    <lastmod>2017-07-27T11:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -257,7 +252,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/categories/</loc>
-    <lastmod>2017-07-28T11:59:47+09:00</lastmod>
+    <lastmod>2017-07-27T11:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -377,7 +372,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/hadoop/</loc>
-    <lastmod>2017-07-28T11:59:47+09:00</lastmod>
+    <lastmod>2017-07-27T11:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -473,7 +468,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/</loc>
-    <lastmod>2017-07-28T11:59:47+09:00</lastmod>
+    <lastmod>2017-07-27T11:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -497,7 +492,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/post/</loc>
-    <lastmod>2017-07-28T11:59:47+09:00</lastmod>
+    <lastmod>2017-07-27T11:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -521,7 +516,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/tags/spark/</loc>
-    <lastmod>2017-07-28T11:59:47+09:00</lastmod>
+    <lastmod>2017-07-27T11:59:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
