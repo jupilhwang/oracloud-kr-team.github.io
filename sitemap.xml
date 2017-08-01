@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/post/changing_trial_account/</loc>
+    <lastmod>2017-08-01T01:20:12+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/post/stpe_by_step_new_cluster_bdcsce/</loc>
     <lastmod>2017-07-31T11:59:47+09:00</lastmod>
   </url>
@@ -219,6 +224,12 @@
   </url>
   
   <url>
+    <loc>http://www.oracloud.kr/categories/account/</loc>
+    <lastmod>2017-08-01T01:20:12+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.oracloud.kr/tags/analytics/</loc>
     <lastmod>2017-05-15T15:00:47+09:00</lastmod>
     <priority>0</priority>
@@ -274,7 +285,7 @@
   
   <url>
     <loc>http://www.oracloud.kr/categories/</loc>
-    <lastmod>2017-07-31T11:59:47+09:00</lastmod>
+    <lastmod>2017-08-01T01:20:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -575,6 +586,12 @@
   <url>
     <loc>http://www.oracloud.kr/terminology/</loc>
     <lastmod>2017-04-17T15:36:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.oracloud.kr/tags/trial-account/</loc>
+    <lastmod>2017-08-01T01:20:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
