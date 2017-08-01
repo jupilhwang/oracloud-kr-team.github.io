@@ -6,10 +6,19 @@
     <description>Recent content in Container on Oracle Cloud 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 24 Apr 2017 19:34:26 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Aug 2017 13:20:12 +0900</lastBuildDate>
     
 	<atom:link href="http://www.oracloud.kr/tags/container/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Oracle Container CS의 Infographics</title>
+      <link>http://www.oracloud.kr/post/container_infographics/</link>
+      <pubDate>Tue, 01 Aug 2017 13:20:12 +0900</pubDate>
+      
+      <guid>http://www.oracloud.kr/post/container_infographics/</guid>
+      <description> Oracle Container Cloud Service의 Infographics입니다. </description>
+    </item>
     
     <item>
       <title>OCCS에 Docker 이미지 배포</title>
