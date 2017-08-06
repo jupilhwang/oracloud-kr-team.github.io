@@ -18,8 +18,8 @@
 
 
 
-<meta property="article:published_time" content="2017-08-04T22:20:25&#43;09:00"/>
-<meta property="article:modified_time" content="2017-08-04T22:20:25&#43;09:00"/>
+<meta property="article:published_time" content="2017-08-06T22:20:25&#43;09:00"/>
+<meta property="article:modified_time" content="2017-08-06T22:20:25&#43;09:00"/>
 
 
 
@@ -62,7 +62,7 @@
 		<li class="menu__item "><a class="menu__link" href="/opc-iaas/" title="IaaS 서비스 관련 문서를 정리하는 페이지입니다." >IAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-paas/" title="PaaS 서비스 관련 문서를 정리하는 페이지입니다." >PAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-terminology/" title="오라클 클라우드에서 각 서비스에서 사용하는 용어의 정의를 정리합니다." >OPC 용어사전</a></li>
-		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
+		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="채팅룸으로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
 	</ul>
 </nav>
 
@@ -76,7 +76,7 @@
 			<h1 class="post__title">Oracle PaaS Service Manager 설치</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2017-08-04 22:20:25 &#43;0900 &#43;0900">August 04, 2017</time>
+				<time class="post__meta-date" datetime="2017-08-06 22:20:25 &#43;0900 &#43;0900">August 06, 2017</time>
 				<span class="post__meta-categories meta-categories">
 					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
 					<a class="meta-categories__link" href="/categories/paas" rel="category">PaaS</a></span>
@@ -142,11 +142,11 @@ PSM를 이용하여 클라우드 환경 프로비저닝과 삭제 자동화를 �
 </tbody>
 </table>
 
-<h2 id="oracle-psm-설치-사전-요구사항">Oracle PSM 설치 사전 요구사항</h2>
+<h2 id="oracle-psm-설치-요구사항">Oracle PSM 설치 요구사항</h2>
 
 <p>Oracle PSM의 실체는 앞에서 설명한 것과 같이 Python으로 만든 오라클 클라우드 PaaS REST API의 클라이언트 구현체 입니다.
 Oracle PSM을 설치하기 위해서는 파이썬이 설치되어 있어야 합니다. Oracle PSM은 파이썬 3.3 버전 이상을 지원합니다.
-파이썬 3.3설치된 모든 OS에서 Oracle PSM을 설치할 수 있습니다.</p>
+파이썬 3.3설치된 모든 OS에 Oracle PSM을 설치할 수 있습니다.</p>
 
 <p>파이썬 버전 확인 방법은 다음과 같습니다.</p>
 
@@ -408,6 +408,66 @@ Oracle PSM의 PaaS 지원 목록은 지속적으로 추가되고 있습니다.</
 <li>그림 7. psm setup 실행 예제
 <img src="https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm07.jpg" alt="" /></li>
 </ul>
+
+<h3 id="oracle-psm-업데이트">Oracle PSM 업데이트</h3>
+
+<p>Oracle PSM의 PaaS 지원 목록이 주기적으로 추가되기 때문에, Oracle PSM은 주기적으로 업데이트 됩니다.
+다음 명령으로 Oracle PSM 버전 확인 및 업그레이드를 할 수 있습니다.</p>
+
+<pre><code>[opc@e25327 ~]$ psm --version
+PSM CLI Client - version 1.1.15
+[opc@e25327 ~]$ psm update
+INFO: You already have the most up-to-date version of psm client installed on the system
+[opc@e25327 ~]$
+</code></pre>
+
+<h2 id="oracle-psm-데모">Oracle PSM 데모</h2>
+
+<p>기본적인 명령 구문은 다음과 같습니다.</p>
+
+<pre><code>psm [ 클라우드 서비스 이름 ]  [ 명령 ]  ( help )
+</code></pre>
+
+<p>Oracle PSM을 사용하는 간단한 방법을 소개합니다. Oracle BDCSCE 서비스를 Oracle PSM으로 조작하는 데모를 다음과 같은 순서로 진행하겠습니다.</p>
+
+<ul>
+<li>BDCSCE 서비스 목록 조회: <code>psm bdcsce services</code></li>
+<li>BDCSCE sparkdemo 인스턴스 상세 정보 조회: <code>psm bdcsce service -s sparkdemo</code></li>
+<li>BDCSCE 서비스 제거: <code>psm bdcsce delete-service -s sparkdemo</code></li>
+<li>BDCSCE 서비스 목록 조회: <code>psm bdcsce services</code></li>
+</ul>
+
+<pre><code>[opc@e25327 ~]$ psm bdcsce services
+ Service    Status
+ ---------- --------
+ sparkdemo  Ready
+[opc@e25327 ~]$ psm bdcsce service -s sparkdemo
+ Service:                    sparkdemo
+ Status:                     Ready
+ Version:                    17.3.1-20
+ Edition:                    Compute Edition
+ Compute Site:               US006_Z49
+ Cloud Storage Container:    Storage-krplustvio/bdcscontainer
+ Created On:                 2017-08-06T02:59:04.153+0000
+[opc@e25327 ~]$ psm bdcsce delete-service -s sparkdemo
+ Message:    Submitted job to delete service [sparkdemo] in domain [krplustvio].
+ Job ID:     14151120
+[opc@e25327 ~]$ psm bdcsce services
+ Service    Status
+ ---------- -------------------------
+ sparkdemo  Terminating Service ...
+ [opc@e25327 ~]$ psm bdcsce services
+ No data found
+ [opc@e25327 ~]$
+</code></pre>
+
+<h2 id="참고자료">참고자료</h2>
+
+<ul>
+<li><a href="https://docs.oracle.com/en/cloud/paas/java-cloud/pscli/toc.htm">Oracle PSM 공식 레퍼런스 문서</a></li>
+<li><a href="https://technology.amis.nl/2017/03/07/getting-started-with-oracle-paas-service-manager-command-line-interface-psm/">Getting started with Oracle PaaS Service Manager Command Line Interface (PSM)</a></li>
+<li><a href="http://qiita.com/shinyay/items/a3773b37fdbb677e52b1">Oracle Cloud의 명령 줄 인터페이스 (CLI)</a></li>
+</ul>
 <div class="footnotes">
 
 <hr />
@@ -494,7 +554,7 @@ s.setAttribute('data-timestamp', +new Date());
 <li>
 <ul>
 <li><a href="#oracle-psm-지원-paas-서비스">Oracle PSM 지원 PaaS 서비스</a></li>
-<li><a href="#oracle-psm-설치-사전-요구사항">Oracle PSM 설치 사전 요구사항</a></li>
+<li><a href="#oracle-psm-설치-요구사항">Oracle PSM 설치 요구사항</a></li>
 <li><a href="#oracle-psm-다운로드">Oracle PSM 다운로드</a>
 <ul>
 <li><a href="#오라클-클라우드-웹-사이트-다운로드">오라클 클라우드 웹 사이트 다운로드</a></li>
@@ -506,7 +566,10 @@ s.setAttribute('data-timestamp', +new Date());
 <li><a href="#oracle-psm-설치-1">Oracle PSM 설치</a></li>
 <li><a href="#oracle-psm-설치-확인">Oracle PSM 설치 확인</a></li>
 <li><a href="#oracle-psm-설정">Oracle PSM 설정</a></li>
+<li><a href="#oracle-psm-업데이트">Oracle PSM 업데이트</a></li>
 </ul></li>
+<li><a href="#oracle-psm-데모">Oracle PSM 데모</a></li>
+<li><a href="#참고자료">참고자료</a></li>
 </ul></li>
 </ul>
 </nav>
