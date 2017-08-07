@@ -61,7 +61,7 @@
 		<li class="menu__item "><a class="menu__link" href="/opc-iaas/" title="IaaS 서비스 관련 문서를 정리하는 페이지입니다." >IAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-paas/" title="PaaS 서비스 관련 문서를 정리하는 페이지입니다." >PAAS 서비스</a></li>
 		<li class="menu__item "><a class="menu__link" href="/opc-terminology/" title="오라클 클라우드에서 각 서비스에서 사용하는 용어의 정의를 정리합니다." >OPC 용어사전</a></li>
-		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
+		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="채팅룸으로 이동합니다."target='_blank' >오라클 클라우드 채팅룸</a></li>
 	</ul>
 </nav>
 
@@ -229,10 +229,35 @@ MySQL CS의 웹 콘솔에서는 스케줄 백업을 구성하는 웹 UI를 제�
 모든 백업은 데이터베이스 온라인 상태로 진행됩니다.
 백업 유형은 다음과 같습니다.</p>
 
-<p>|실행 유형|백업 유형|실행 주기|
-|스케줄 백업| full backup | 주 1회(Weekly)|
-|스케줄 백업| incremental backup| 매일 1회 (Daily) |
-|On-demand 백업| full backup | 사용자 요청 시 백업 수행 |</p>
+<table>
+<thead>
+<tr>
+<th>실행 유형</th>
+<th>백업 유형</th>
+<th>실행 주기</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>스케줄 백업</td>
+<td>full backup</td>
+<td>주 1회(Weekly)</td>
+</tr>
+
+<tr>
+<td>스케줄 백업</td>
+<td>incremental backup</td>
+<td>매일 1회 (Daily)</td>
+</tr>
+
+<tr>
+<td>On-demand 백업</td>
+<td>full backup</td>
+<td>사용자 요청 시 백업 수행</td>
+</tr>
+</tbody>
+</table>
 
 <p>백업 데이터는 Oracle MySQL CS 인스턴스의 가상머신과 Object Storage에 저장됩니다.
 MySQL CS 가상머신에 저장되는 백업 데이터는 최대 7일간 유지되고, Storage CS에
